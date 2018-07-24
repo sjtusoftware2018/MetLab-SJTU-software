@@ -1,0 +1,2450 @@
+##Cysteine Metabolism
+M_3sala_c,3-Sulfino-L-alanine
+M_3snpyr_c,3-Sulfinopyruvate
+M_3spyr_c,3-Sulfopyruvate
+M_Lcyst_c,L-Cysteate
+M_ac_c,Acetate
+M_accoa_c,Acetyl-CoA
+M_acser_c,O-Acetyl-L-serine
+M_akg_c,2-Oxoglutarate
+M_coa_c,Coenzyme A
+M_cys__L_c,L-Cysteine
+M_glu__L_c,L-Glutamate
+M_h2s_c,Hydrogen sulfide
+M_h_c,H+
+M_mercplac_c,3-Mercaptolactate
+M_mercppyr_c,Mercaptopyruvate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_ser__L_c,L-Serine
+R_3SALATAi,3-sulfino-alanine transaminase (irreversible),0
+R_CYSS,Cysteine synthase,0
+R_CYSTA,Cysteine transaminase,1
+R_LCYSTAT,L-Cysteate:2-oxoglutarate aminotransferase,1
+R_MCLORi,3-Mercaptolactate:NAD+ oxidoreductase irreversible,0
+R_SERAT,Serine O-acetyltransferase,1
+#R_3SALATAi,M_3sala_c,M_akg_c,M_h_c,-,M_3snpyr_c,M_glu__L_c
+#R_CYSS,M_acser_c,M_h2s_c,-,M_ac_c,M_cys__L_c,M_h_c
+#R_CYSTA,M_akg_c,M_cys__L_c,-,M_glu__L_c,M_mercppyr_c
+#R_LCYSTAT,M_Lcyst_c,M_akg_c,-,M_3spyr_c,M_glu__L_c
+#R_MCLORi,M_h_c,M_mercppyr_c,M_nadh_c,-,M_mercplac_c,M_nad_c
+#R_SERAT,M_accoa_c,M_ser__L_c,-,M_acser_c,M_coa_c
+##Lysine Biosynthesis
+M_23dhdp_c,2,3-Dihydrodipicolinate
+M_26dap_LL_c,LL-2,6-Diaminoheptanedioate
+M_26dap__M_c,Meso-2,6-Diaminoheptanedioate
+M_ac_c,Acetate
+M_accoa_c,Acetyl-CoA
+M_akg_c,2-Oxoglutarate
+M_aspsa_c,L-Aspartate 4-semialdehyde
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_lys__L_c,L-Lysine
+M_n6all26d_c,N6-Acetyl-LL-2,6-diaminoheptanedioate
+M_nal2a6o_c,N-Acetyl-L-2-amino-6-oxopimelate
+M_pyr_c,Pyruvate
+M_thdp_c,2,3,4,5-Tetrahydrodipicolinate
+R_ADAPAT,E N-acetyl-L,L-diaminopimelate aminotransferase,1
+R_DAPDA,N-acetyl-L,L-diaminopimelate deacetylase,1
+R_DAPDC,Diaminopimelate decarboxylase,0
+R_DAPE,Diaminopimelate epimerase,1
+R_DHDPS,Dihydrodipicolinate synthase,0
+R_THPAT,L-2,3,4,5-tetrahydrodipicolinate N2-acetyltransferase,0
+#R_ADAPAT,M_glu__L_c,M_nal2a6o_c,-,M_akg_c,M_n6all26d_c
+#R_DAPDA,M_h2o_c,M_n6all26d_c,-,M_26dap_LL_c,M_ac_c
+#R_DAPDC,M_26dap__M_c,M_h_c,-,M_co2_c,M_lys__L_c
+#R_DAPE,M_26dap_LL_c,-,M_26dap__M_c
+#R_DHDPS,M_aspsa_c,M_pyr_c,-,M_23dhdp_c,M_h2o_c,M_h_c
+#R_THPAT,M_accoa_c,M_h2o_c,M_thdp_c,-,M_coa_c,M_nal2a6o_c
+##Folate Metabolism
+M_10fthf_c,10-Formyltetrahydrofolate
+M_2ahhmd_c,2 Amino 4 hydroxy 6 hydroxymethyl 7 8 dihydropteridine diphosphate C7H8N5O8P2
+M_2ahhmp_c,2 Amino 4 hydroxy 6 hydroxymethyl 7 8 dihydropteridine C7H9N5O2
+M_4abz_c,4-Aminobenzoate
+M_4adcho_c,4-amino-4-deoxychorismate
+M_5forthf_c,5-Formiminotetrahydrofolate
+M_5fthf_c,5-Formyltetrahydrofolate
+M_5mthf_c,5-Methyltetrahydrofolate
+M_6pthp_c,6-Pyruvoyl-5,6,7,8-tetrahydropterin
+M_Nforglu_c,N-Formyl-L-glutamate
+M_adp_c,ADP C10H12N5O10P2
+M_ahdt_c,2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate
+M_amp_c,AMP C10H12N5O7P
+M_atp_c,ATP C10H12N5O13P3
+M_chor_c,Chorismate
+M_co2_c,CO2 CO2
+M_dhf_c,7,8-Dihydrofolate
+M_dhnpt_c,Dihydroneopterin
+M_dhpmp_c,Dihydroneopterin monophosphate
+M_dhpt_c,Dihydropteroate
+M_for_c,Formate
+M_forglu_c,N-Formimidoyl-L-glutamate
+M_gcald_c,Glycolaldehyde
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_gly_c,Glycine
+M_gtp_c,GTP C10H12N5O14P3
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_methf_c,5,10-Methenyltetrahydrofolate
+M_mlthf_c,5,10-Methylenetetrahydrofolate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_pppi_c,Inorganic triphosphate
+M_pyr_c,Pyruvate
+M_thf_c,5,6,7,8-Tetrahydrofolate
+R_ADCL,4-aminobenzoate synthase,0
+R_ADCS,4-amino-4-deoxychorismate synthase,0
+R_AKP1,Alkaline phosphatase  Dihydroneopterin ,0
+R_DHFR,Dihydrofolate reductase,1
+R_DHFS,Dihydrofolate synthase,0
+R_DHNPA,Dihydroneopterin aldolase,0
+R_DNMPPA,Dihydroneopterin monophosphate dephosphorylase,0
+R_DNTPPA,Dihydroneopterin triphosphate pyrophosphatase,0
+R_FOLD3,Dihydropteroate synthase,0
+R_FTCD,Formimidoyltransferase cyclodeaminase reversible,1
+R_FTHFLi,Formate-tetrahydrofolate ligase,1
+R_GLUFT,5-Formyltetrahydrofolate,0
+R_GLYCL_2,Glycine cleavage system, cytosol,0
+R_GTPCI,GTP cyclohydrolase I,0
+R_GluForTx,Formimidoyltransferase cyclodeaminase,1
+R_HPPK,2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase,0
+R_MTHFC,Methenyltetrahydrofolate cyclohydrolase,1
+R_MTHFD,Methylenetetrahydrofolate dehydrogenase (NADP),1
+R_MTHFR2,5,10-methylenetetrahydrofolate reductase (NADH),1
+R_PTHPS,6-pyruvoyltetrahydropterin synthase,0
+#R_ADCL,M_4adcho_c,-,M_4abz_c,M_h_c,M_pyr_c
+#R_ADCS,M_chor_c,M_gln__L_c,-,M_4adcho_c,M_glu__L_c
+#R_AKP1,M_ahdt_c,M_h2o_c,-,M_dhnpt_c,M_h_c,M_pi_c
+#R_DHFR,M_dhf_c,M_h_c,M_nadph_c,-,M_nadp_c,M_thf_c
+#R_DHFS,M_atp_c,M_dhpt_c,M_glu__L_c,-,M_adp_c,M_dhf_c,M_h_c,M_pi_c
+#R_DHNPA,M_dhnpt_c,-,M_2ahhmp_c,M_gcald_c,M_h_c
+#R_DNMPPA,M_dhpmp_c,M_h2o_c,-,M_dhnpt_c,M_pi_c
+#R_DNTPPA,M_ahdt_c,M_h2o_c,-,M_dhpmp_c,M_h_c,M_ppi_c
+#R_FOLD3,M_2ahhmd_c,M_4abz_c,-,M_dhpt_c,M_ppi_c
+#R_FTCD,M_5forthf_c,M_h_c,-,M_methf_c,M_nh4_c
+#R_FTHFLi,M_atp_c,M_for_c,M_thf_c,-,M_10fthf_c,M_adp_c,M_pi_c
+#R_GluForTx,M_forglu_c,M_h_c,M_thf_c,-,M_5forthf_c,M_glu__L_c
+#R_GLUFT,M_5fthf_c,M_glu__L_c,M_h_c,-,M_Nforglu_c,M_thf_c
+#R_GLYCL_2,M_co2_c,M_mlthf_c,M_nadh_c,M_nh4_c,-,M_gly_c,M_nad_c,M_thf_c
+#R_GTPCI,M_gtp_c,M_h2o_c,-,M_ahdt_c,M_for_c,M_h_c
+#R_HPPK,M_2ahhmp_c,M_atp_c,-,M_2ahhmd_c,M_amp_c,M_h_c
+#R_MTHFC,M_h2o_c,M_methf_c,-,M_10fthf_c,M_h_c
+#R_MTHFD,M_mlthf_c,M_nadp_c,-,M_methf_c,M_nadph_c
+#R_MTHFR2,M_h_c,M_mlthf_c,M_nadh_c,-,M_5mthf_c,M_nad_c
+#R_PTHPS,M_ahdt_c,-,M_6pthp_c,M_pppi_c
+##Methionine Metabolism
+M_2obut_c,2-Oxobutanoate
+M_5mdr1p_c,5-Methylthio-5-deoxy-D-ribose 1-phosphate
+M_5mdru1p_c,5-Methylthio-5-deoxy-D-ribulose 1-phosphate
+M_5mta_c,5-Methylthioadenosine
+M_5mthf_c,5-Methyltetrahydrofolate
+M_5mtr_c,5-Methylthio-D-ribose
+M_ac_c,Acetate
+M_accoa_c,Acetyl-CoA
+M_achms_c,O Acetyl L homoserine C6H11NO4
+M_ade_c,Adenine
+M_adn_c,Adenosine
+M_ahcys_c,S-Adenosyl-L-homocysteine
+M_amet_c,S-Adenosyl-L-methionine
+M_ametam_c,S-Adenosylmethioninamine
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_cys__L_c,L-Cysteine
+M_cyst__L_c,L-Cystathionine
+M_h2o_c,H2O H2O
+M_h2s_c,Hydrogen sulfide
+M_h_c,H+
+M_hcys__L_c,L-Homocysteine
+M_hom__L_c,L-Homoserine
+M_hpglu_c,Tetrahydropteroyltri L glutamate C24H34N8O12
+M_met__L_c,L-Methionine
+M_mhpglu_c,5 Methyltetrahydropteroyltri L glutamate C25H36N8O12
+M_nh4_c,Ammonium
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_rhcys_c,S-Ribosyl-L-homocysteine
+M_succ_c,Succinate
+M_suchms_c,O-Succinyl-L-homoserine
+M_thf_c,5,6,7,8-Tetrahydrofolate
+R_ADMDC,Adenosylmethionine decarboxylase,0
+R_AHCYSNS,S-adenosylhomocysteine nucleosidase,1
+R_AHCi,Adenosylhomocysteinase,1
+R_AHSERL2,O acetylhomoserine  thiol  lyase,0
+R_HSERTA,Homoserine O trans acetylase,1
+R_METAT,Methionine adenosyltransferase,0
+R_METB1,Metb1 (rev),1
+R_METS,Methionine synthase,0
+R_MHPGLUT,5 methyltetrahydropteroyltriglutamate homocysteine S methyltransferase,0
+R_MTAN,Methylthioadenosine nucleosidase,0
+R_MTRI,5-methylthioribose-1-phosphate isomerase,0
+R_SHSL1,O-succinylhomoserine lyase (L-cysteine),0
+R_SHSL2r,O-succinylhomoserine lyase (H2S),1
+R_SHSL4r,O succinylhomoserine lyase  elimination   reversible,1
+#R_ADMDC,M_amet_c,M_h_c,-,M_ametam_c,M_co2_c
+#R_AHCi,M_ahcys_c,M_h2o_c,-,M_adn_c,M_hcys__L_c
+#R_AHCYSNS,M_ahcys_c,M_h2o_c,-,M_ade_c,M_rhcys_c
+#R_AHSERL2,M_achms_c,M_h2s_c,-,M_ac_c,M_h_c,M_hcys__L_c
+#R_HSERTA,M_accoa_c,M_hom__L_c,-,M_achms_c,M_coa_c
+#R_METAT,M_atp_c,M_h2o_c,M_met__L_c,-,M_amet_c,M_pi_c,M_ppi_c
+#R_METB1,M_achms_c,M_cys__L_c,-,M_ac_c,M_cyst__L_c,M_h_c
+#R_METS,M_5mthf_c,M_hcys__L_c,-,M_h_c,M_met__L_c,M_thf_c
+#R_MTAN,M_5mta_c,M_h2o_c,-,M_5mtr_c,M_ade_c
+#R_MHPGLUT,M_hcys__L_c,M_mhpglu_c,-,M_hpglu_c,M_met__L_c
+#R_MTRI,M_5mdr1p_c,-,M_5mdru1p_c
+#R_SHSL1,M_cys__L_c,M_suchms_c,-,M_cyst__L_c,M_h_c,M_succ_c
+#R_SHSL2r,M_h2s_c,M_suchms_c,-,M_h_c,M_hcys__L_c,M_succ_c
+#R_SHSL4r,M_h2o_c,M_suchms_c,-,M_2obut_c,M_h_c,M_nh4_c,M_succ_c
+##Purine Biosynthesis
+M_10fthf_c,10-Formyltetrahydrofolate
+M_25aics_c,(S)-2-[5-Amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido]succinate
+M_5aizc_c,5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate
+M_adp_c,ADP C10H12N5O10P2
+M_aicar_c,5-Amino-1-(5-Phospho-D-ribosyl)imidazole-4-carboxamide
+M_air_c,5-amino-1-(5-phospho-D-ribosyl)imidazole
+M_amp_c,AMP C10H12N5O7P
+M_asp__L_c,L-Aspartate
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_dcamp_c,N6-(1,2-Dicarboxyethyl)-AMP
+M_fgam_c,N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide
+M_fpram_c,2-(Formamido)-N1-(5-phospho-D-ribosyl)acetamidine
+M_fprica_c,5-Formamido-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide
+M_fum_c,Fumarate
+M_gar_c,N1-(5-Phospho-D-ribosyl)glycinamide
+M_gdp_c,GDP C10H12N5O11P2
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_gly_c,Glycine
+M_gtp_c,GTP C10H12N5O14P3
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_imp_c,IMP C10H11N4O8P
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_pram_c,5-Phospho-beta-D-ribosylamine
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_r5p_c,Alpha-D-Ribose 5-phosphate
+M_thf_c,5,6,7,8-Tetrahydrofolate
+R_ADSL1r,Adenylsuccinate lyase,1
+R_ADSL2r,Adenylosuccinate lyase,1
+R_ADSS,Adenylosuccinate synthase,0
+R_AICART,Phosphoribosylaminoimidazolecarboxamide formyltransferase,0
+R_AIRCr,Phosphoribosylaminoimidazole carboxylase,1
+R_GARFT,Phosphoribosylglycinamide formyltransferase,0
+R_GLUPRT,Glutamine phosphoribosyldiphosphate amidotransferase,0
+R_IMPC,IMP cyclohydrolase,1
+R_PRAGSr,Phosphoribosylglycinamide synthase,0
+R_PRAIS,Phosphoribosylaminoimidazole synthase,0
+R_PRASCSi,Phosphoribosylaminoimidazolesuccinocarboxamide synthase,1
+R_PRFGS,Phosphoribosylformylglycinamidine synthase,0
+R_PRPPS,Phosphoribosylpyrophosphate synthetase,1
+#R_ADSL1r,M_dcamp_c,-,M_amp_c,M_fum_c
+#R_ADSL2r,M_25aics_c,-,M_aicar_c,M_fum_c
+#R_ADSS,M_asp__L_c,M_gtp_c,M_imp_c,-,M_dcamp_c,M_gdp_c,M_h_c,M_pi_c
+#R_AICART,M_10fthf_c,M_aicar_c,-,M_fprica_c,M_thf_c
+#R_AIRCr,M_air_c,M_co2_c,-,M_5aizc_c,M_h_c
+#R_GARFT,M_10fthf_c,M_gar_c,-,M_fgam_c,M_h_c,M_thf_c
+#R_GLUPRT,M_gln__L_c,M_h2o_c,M_prpp_c,-,M_glu__L_c,M_ppi_c,M_pram_c
+#R_IMPC,M_h2o_c,M_imp_c,-,M_fprica_c
+#R_PRAGSr,M_atp_c,M_gly_c,M_pram_c,-,M_adp_c,M_gar_c,M_h_c,M_pi_c
+#R_PRAIS,M_atp_c,M_fpram_c,-,M_adp_c,M_air_c,M_h_c,M_pi_c
+#R_PRASCSi,M_5aizc_c,M_asp__L_c,M_atp_c,-,M_25aics_c,M_adp_c,M_h_c,M_pi_c
+#R_PRFGS,M_atp_c,M_fgam_c,M_gln__L_c,M_h2o_c,-,M_adp_c,M_fpram_c,M_glu__L_c,M_h_c,M_pi_c
+#R_PRPPS,M_atp_c,M_r5p_c,-,M_amp_c,M_h_c,M_prpp_c
+##Aminosugar Metabolism
+M_ac_c,Acetate
+M_accoa_c,Acetyl-CoA
+M_acgam1p_c,N-Acetyl-D-glucosamine 1-phosphate
+M_acgam6p_c,N-Acetyl-D-glucosamine 6-phosphate
+M_acgam_c,N-Acetyl-D-glucosamine
+M_chtbs_c,N,N-diacetylchitobiose
+M_coa_c,Coenzyme A
+M_f6p_c,D-Fructose 6-phosphate
+M_gam1p_c,D-Glucosamine 1-phosphate
+M_gam6p_c,D-Glucosamine 6-phosphate
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nh4_c,Ammonium
+M_ppi_c,Diphosphate
+M_uacgam_c,UDP-N-acetyl-D-glucosamine
+M_utp_c,UTP C9H11N2O15P3
+R_AGDC,N-acetylglucosamine-6-phosphate deacetylase,1
+R_AHEXASE3,Beta-N-acetylhexosaminidase, cytosol,0
+R_G1PACT,Glucosamine-1-phosphate N-acetyltransferase,0
+R_G6PDA,Glucosamine-6-phosphate deaminase,1
+R_GF6PTA,Glutamine-fructose-6-phosphate transaminase,0
+R_PGAMT,Phosphoglucosamine mutase,1
+R_UAGDP,UDP-N-acetylglucosamine diphosphorylase,0
+#R_AGDC,M_acgam6p_c,M_h2o_c,-,M_ac_c,M_gam6p_c
+#R_AHEXASE3,M_chtbs_c,M_h2o_c,-,M_acgam_c
+#R_G1PACT,M_accoa_c,M_gam1p_c,-,M_acgam1p_c,M_coa_c,M_h_c
+#R_G6PDA,M_gam6p_c,M_h2o_c,-,M_f6p_c,M_nh4_c
+#R_GF6PTA,M_f6p_c,M_gln__L_c,-,M_gam6p_c,M_glu__L_c
+#R_PGAMT,M_gam1p_c,-,M_gam6p_c
+#R_UAGDP,M_acgam1p_c,M_h_c,M_utp_c,-,M_ppi_c,M_uacgam_c
+##Lipid Biosynthesis
+M_1hdecg3p_c,1-hexadecanoyl-sn-glycerol 3-phosphate
+M_ACP_c,Acyl carrier protein
+M_cdpdhdecg_c,CDP-1,2-dihexadecanoylglycerol
+M_cmp_c,CMP C9H12N3O8P
+M_ctp_c,CTP C9H12N3O14P3
+M_dmosACP_c,13,14-Dimethyloctacosanedioic acid ACP (C30:0 ACP)
+M_dmtaACP_c,15,16-Dimethyltriacontanedioic acid ACP (C32:0 ACP)
+M_frdp_c,Farnesyl diphosphate
+M_glyc3p_c,Glycerol 3-phosphate
+M_h_c,H+
+M_ipdp_c,Isopentenyl diphosphate
+M_myrsACP_c,Myristoyl-ACP (n-C14:0ACP)
+M_pa160_c,1,2-dihexadecanoyl-sn-glycerol 3-phosphate
+M_palmACP_c,Palmitoyl-ACP (n-C16:0ACP)
+M_pgp160_c,Phosphatidylglycerophosphate (dihexadecanoyl, n-C16:0)
+M_ppi_c,Diphosphate
+M_udcpdp_c,Undecaprenyl diphosphate
+R_AGPAT160,1-hexadecanoyl-sn-glycerol 3-phosphate O-acyltransferase (n-C16:0),0
+R_DASYN160,CDP-diacylglycerol synthetase (n-C16:0),0
+R_FASC300,Synthesis of 13,14-Dimethyloctacosanedioic acid (C30:0),0
+R_FASC320,Synthesis of 15,16-Dimethyltriacontanedioic acid (C32:0),0
+R_G3PAT160,Glycerol-3-phosphate acyltransferase (C16:0),0
+R_PGSA160,Phosphatidylglycerol synthase (n-C16:0),0
+R_UDCPDPS,Undecaprenyl diphosphate synthase,0
+#R_AGPAT160,M_1hdecg3p_c,M_palmACP_c,-,M_ACP_c,M_pa160_c
+#R_DASYN160,M_ctp_c,M_h_c,M_pa160_c,-,M_cdpdhdecg_c,M_ppi_c
+#R_FASC300,M_myrsACP_c,M_palmACP_c,-,M_ACP_c,M_dmosACP_c
+#R_FASC320,M_palmACP_c,-,M_ACP_c,M_dmtaACP_c
+#R_G3PAT160,M_glyc3p_c,M_palmACP_c,-,M_1hdecg3p_c,M_ACP_c
+#R_PGSA160,M_cdpdhdecg_c,M_glyc3p_c,-,M_cmp_c,M_h_c,M_pgp160_c
+#R_UDCPDPS,M_frdp_c,M_ipdp_c,-,M_ppi_c,M_udcpdp_c
+##Thiamine Biosynthesis
+M_2mahmp_c,2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate
+M_4ahmmp_c,4-Amino-5-hydroxymethyl-2-methylpyrimidine
+M_4ampm_c,4-Amino-2-methyl-5-phosphomethylpyrimidine
+M_4hba_c,4-Hydroxy-benzyl alcohol
+M_4mpetz_c,4-Methyl-5-(2-phosphoethyl)-thiazole
+M_adp_c,ADP C10H12N5O10P2
+M_air_c,5-amino-1-(5-phospho-D-ribosyl)imidazole
+M_ala__L_c,L-Alanine
+M_amp_c,AMP C10H12N5O7P
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_cys__L_c,L-Cysteine
+M_dxyl5p_c,1-deoxy-D-xylulose 5-phosphate
+M_gcald_c,Glycolaldehyde
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_thmmp_c,Thiamin monophosphate
+M_thmpp_c,Thiamine diphosphate
+M_tyr__L_c,L-Tyrosine
+R_AHMMPS,4 amino 5 hydroxymethyl 2 methylpyrimidine synthetase,0
+R_HMPK1,Hydroxymethylpyrimidine kinase (ATP),0
+R_PMPK,Phosphomethylpyrimidine kinase,0
+R_THZPSN,Thiazole phosphate synthesis,0
+R_TMPK,Thiamine-phosphate kinase,1
+R_TMPPP,Thiamine-phosphate diphosphorylase,0
+#R_AHMMPS,M_air_c,M_h_c,-,M_4ahmmp_c,M_gcald_c,M_pi_c
+#R_HMPK1,M_4ahmmp_c,M_atp_c,-,M_4ampm_c,M_adp_c,M_h_c
+#R_PMPK,M_4ampm_c,M_atp_c,-,M_2mahmp_c,M_adp_c
+#R_THZPSN,M_atp_c,M_cys__L_c,M_dxyl5p_c,M_tyr__L_c,-,M_4hba_c,M_4mpetz_c,M_ala__L_c,M_amp_c,M_co2_c,M_h2o_c,M_h_c,M_ppi_c
+#R_TMPK,M_atp_c,M_thmmp_c,-,M_adp_c,M_thmpp_c
+#R_TMPPP,M_2mahmp_c,M_4mpetz_c,M_h_c,-,M_ppi_c,M_thmmp_c
+##Peptidoglycan Biosynthesis
+M_adp_c,ADP C10H12N5O10P2
+M_ala__D_c,D-Alanine
+M_ala__L_c,L-Alanine
+M_alaala_c,D-Alanyl-D-alanine
+M_atp_c,ATP C10H12N5O13P3
+M_glu__D_c,D-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_lys__L_c,L-Lysine
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_pep_c,Phosphoenolpyruvate
+M_peptido_TM_c,Peptidoglycan subunit of Thermotoga maritima
+M_pi_c,Phosphate
+M_uGgl_c,UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-L-lysine
+M_uGgla_c,UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine
+M_uaGgla_c,Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine
+M_uaaGgla_c,Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine
+M_uaaGgtla_c,Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-D-alanyl-D-alanine
+M_uaccg_c,UDP-N-acetyl-3-O-(1-carboxyvinyl)-D-glucosamine
+M_uacgam_c,UDP-N-acetyl-D-glucosamine
+M_uama_c,UDP-N-acetylmuramoyl-L-alanine
+M_uamag_c,UDP-N-acetylmuramoyl-L-alanyl-D-glutamate
+M_uamr_c,UDP-N-acetylmuramate
+M_udcpdp_c,Undecaprenyl diphosphate
+M_udcpp_c,Undecaprenyl phosphate
+M_udp_c,UDP C9H11N2O12P2
+M_ump_c,UMP C9H11N2O9P
+R_ALAALAr,D-alanine-D-alanine ligase (reversible),1
+R_GLNSP2,Glutamine synthetase (uaaGgla),0
+R_PAPPT2,Phospho-N-acetylmuramoyl-pentapeptide-transferase (gamma-glutamate),0
+R_PPTGS_TM,Peptidoglycan subunit synthesis,0
+R_UAAGLS2,UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysine synthetase (gamma-glutamate),0
+R_UAGCVT,UDP-N-acetylglucosamine 1-carboxyvinyltransferase,1
+R_UAGPT2,UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol N-acetylglucosamine transferase,0
+R_UAMAGS,UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase,0
+R_UAMAS,UDP-N-acetylmuramoyl-L-alanine synthetase,0
+R_UAPGR,UDP-N-acetylenolpyruvoylglucosamine reductase,0
+R_UDCPDP,Undecaprenyl-diphosphatase,0
+R_UGLDDS2,UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine synthetase (gamma-glutamate),0
+#R_ALAALAr,M_ala__D_c,M_atp_c,-,M_adp_c,M_alaala_c,M_h_c,M_pi_c
+#R_GLNSP2,M_atp_c,M_nh4_c,M_uaaGgla_c,-,M_adp_c,M_h_c,M_pi_c,M_uaaGgtla_c
+#R_PAPPT2,M_uGgla_c,M_udcpp_c,-,M_uaGgla_c,M_ump_c
+#R_PPTGS_TM,M_uaaGgla_c,-,M_h_c,M_peptido_TM_c,M_udcpdp_c
+#R_UAAGLS2,M_atp_c,M_lys__L_c,M_uamag_c,-,M_adp_c,M_h_c,M_pi_c,M_uGgl_c
+#R_UAGCVT,M_pep_c,M_uacgam_c,-,M_pi_c,M_uaccg_c
+#R_UAGPT2,M_uaGgla_c,M_uacgam_c,-,M_h_c,M_uaaGgla_c,M_udp_c
+#R_UAMAGS,M_atp_c,M_glu__D_c,M_uama_c,-,M_adp_c,M_h_c,M_pi_c,M_uamag_c
+#R_UAMAS,M_ala__L_c,M_atp_c,M_uamr_c,-,M_adp_c,M_h_c,M_pi_c,M_uama_c
+#R_UAPGR,M_h_c,M_nadph_c,M_uaccg_c,-,M_nadp_c,M_uamr_c
+#R_UDCPDP,M_h2o_c,M_udcpdp_c,-,M_h_c,M_pi_c,M_udcpp_c
+#R_UGLDDS2,M_alaala_c,M_atp_c,M_uGgl_c,-,M_adp_c,M_pi_c,M_uGgla_c
+##Alanine and Aspartate Metabolism
+M_ala_B_c,Beta-Alanine
+M_ala__D_c,D-Alanine
+M_ala__L_c,L-Alanine
+M_asp__L_c,L-Aspartate
+M_co2_c,CO2 CO2
+M_fum_c,Fumarate
+M_h_c,H+
+M_nh4_c,Ammonium
+M_oaa_c,Oxaloacetate
+M_pyr_c,Pyruvate
+R_ALAR,Alanine racemase,1
+R_ASP1DC,Aspartate 1-decarboxylase,0
+R_ASPT,L-aspartase,1
+R_ASPTA6,E L-alanine-alpha-keto acid aminotransferase,1
+#R_ALAR,M_ala__L_c,-,M_ala__D_c
+#R_ASP1DC,M_asp__L_c,M_h_c,-,M_ala_B_c,M_co2_c
+#R_ASPTA6,M_ala__L_c,M_oaa_c,-,M_asp__L_c,M_pyr_c
+#R_ASPT,M_asp__L_c,-,M_fum_c,M_nh4_c
+##tRNA Metabolism
+M_10fthf_c,10-Formyltetrahydrofolate
+M_adp_c,ADP C10H12N5O10P2
+M_ala__L_c,L-Alanine
+M_alatrna_c,L-Alanyl-tRNA(Ala)
+M_amp_c,AMP C10H12N5O7P
+M_arg__L_c,L-Arginine
+M_argtrna_c,L-Arginyl-tRNA(Arg)
+M_asntrna_c,L-Asparaginyl-tRNA(Asn)
+M_asp__L_c,L-Aspartate
+M_asptrna_asn_c,L-Aspartyl-tRNA(Asn)
+M_asptrna_c,L-Aspartyl-tRNA(Asp)
+M_atp_c,ATP C10H12N5O13P3
+M_cys__L_c,L-Cysteine
+M_cystrna_c,L-Cysteinyl-tRNA(Cys)
+M_fmettrna_c,N-Formylmethionyl-tRNA
+M_gln__L_c,L-Glutamine
+M_glntrna_c,L-Glutaminyl-tRNA(Gln)
+M_glu__L_c,L-Glutamate
+M_glutrna_c,L-Glutamyl-tRNA(Glu)
+M_glutrna_gln_c,L-Glutamyl-tRNA(Gln)
+M_gly_c,Glycine
+M_glytrna_c,Glycyl-tRNA(Gly)
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_his__L_c,L-Histidine
+M_histrna_c,L-Histidyl-tRNA(His)
+M_ile__L_c,L-Isoleucine
+M_iletrna_c,L-Isoleucyl-tRNA(Ile)
+M_leu__L_c,L-Leucine
+M_leutrna_c,L-Leucyl-tRNA(Leu)
+M_lys__L_c,L-Lysine
+M_lystrna_c,L-Lysine-tRNA (Lys)
+M_met__L_c,L-Methionine
+M_mettrna_c,L-Methionyl-tRNA (Met)
+M_phe__L_c,L-Phenylalanine
+M_phetrna_c,L-Phenylalanyl-tRNA(Phe)
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_pro__L_c,L-Proline
+M_protrna_c,L-Prolyl-tRNA(Pro)
+M_ser__L_c,L-Serine
+M_sertrna_c,L-Seryl-tRNA(Ser)
+M_thf_c,5,6,7,8-Tetrahydrofolate
+M_trnaala_c,TRNA(Ala)
+M_trnaarg_c,TRNA(Arg)
+M_trnaasn_c,TRNA Asn  C10H17O10PR2
+M_trnaasp_c,TRNA(Asp)
+M_trnacys_c,TRNA(Cys)
+M_trnagln_c,TRNA(Gln)
+M_trnaglu_c,TRNA (Glu)
+M_trnagly_c,TRNA(Gly)
+M_trnahis_c,TRNA(His)
+M_trnaile_c,TRNA(Ile)
+M_trnaleu_c,TRNA(Leu)
+M_trnalys_c,TRNA(Lys)
+M_trnamet_c,TRNA(Met)
+M_trnaphe_c,TRNA(Phe)
+M_trnapro_c,TRNA(Pro)
+M_trnaser_c,TRNA(Ser)
+M_trnatrp_c,TRNA(Trp)
+M_trnatyr_c,TRNA(Tyr)
+M_trnaval_c,TRNA(Val)
+M_trp__L_c,L-Tryptophan
+M_trptrna_c,L-Tryptophanyl-tRNA(Trp)
+M_tyr__L_c,L-Tyrosine
+M_tyrtrna_c,L-Tyrosyl-tRNA(Tyr)
+M_val__L_c,L-Valine
+M_valtrna_c,L-Valyl-tRNA(Val)
+R_ALATRS,Alanyl-tRNA synthetase,0
+R_ARGTRS,Arginyl-tRNA synthetase,1
+R_ASNTRAT,Aspartyl-tRNA(Asn) amidotransferase,0
+R_ASPTRS,Aspartyl-tRNA synthetase,0
+R_ASPTRS_Asn,Aspartyl-tRNA synthetase (Asn),0
+R_CYSTRS,Cysteinyl-tRNA synthetase,0
+R_FMETTRS,Methionyl-tRNA formyltransferase,0
+R_GLNTRAT,Glutamyl-tRNA(Gln) amidotransferase,0
+R_GLUTRS,Glutamyl-tRNA synthetase,0
+R_GLUTRS_Gln,Glutamyl-tRNA synthetase (Gln),0
+R_GLYTRS,Glycyl-tRNA synthetase,0
+R_HISTRS,Histidyl-tRNA synthetase,0
+R_ILETRS,Isoleucyl-tRNA synthetase,0
+R_LEUTRS,Leucyl-tRNA synthetase,0
+R_LYSTRS,Lysyl-tRNA synthetase,0
+R_METTRS,Methionyl-tRNA synthetase,0
+R_PHETRS,Phenylalanyl-tRNA synthetase,0
+R_PROTRS,Prolyl-tRNA synthetase,0
+R_SERTRS,Seryl-tRNA synthetase,0
+R_TRPTRS,Tryptophanyl-tRNA synthetase,0
+R_TYRTRS,Tyrosyl-tRNA synthetase,0
+R_VALTRS,Valyl-tRNA synthetase,0
+#R_ALATRS,M_ala__L_c,M_atp_c,M_trnaala_c,-,M_alatrna_c,M_amp_c,M_ppi_c
+#R_ARGTRS,M_arg__L_c,M_atp_c,M_trnaarg_c,-,M_amp_c,M_argtrna_c,M_ppi_c
+#R_ASNTRAT,M_asptrna_asn_c,M_atp_c,M_gln__L_c,M_h2o_c,-,M_adp_c,M_asntrna_c,M_glu__L_c,M_h_c,M_pi_c
+#R_ASPTRS,M_asp__L_c,M_atp_c,M_trnaasp_c,-,M_amp_c,M_asptrna_c,M_ppi_c
+#R_ASPTRS_Asn,M_asp__L_c,M_atp_c,M_trnaasn_c,-,M_amp_c,M_asptrna_asn_c,M_ppi_c
+#R_CYSTRS,M_atp_c,M_cys__L_c,M_trnacys_c,-,M_amp_c,M_cystrna_c,M_ppi_c
+#R_FMETTRS,M_10fthf_c,M_mettrna_c,-,M_fmettrna_c,M_h_c,M_thf_c
+#R_GLNTRAT,M_atp_c,M_gln__L_c,M_glutrna_gln_c,M_h2o_c,-,M_adp_c,M_glntrna_c,M_glu__L_c,M_h_c,M_pi_c
+#R_GLUTRS,M_atp_c,M_glu__L_c,M_trnaglu_c,-,M_amp_c,M_glutrna_c,M_ppi_c
+#R_GLUTRS_Gln,M_atp_c,M_glu__L_c,M_trnagln_c,-,M_amp_c,M_glutrna_gln_c,M_ppi_c
+#R_GLYTRS,M_atp_c,M_gly_c,M_trnagly_c,-,M_amp_c,M_glytrna_c,M_ppi_c
+#R_HISTRS,M_atp_c,M_his__L_c,M_trnahis_c,-,M_amp_c,M_histrna_c,M_ppi_c
+#R_ILETRS,M_atp_c,M_ile__L_c,M_trnaile_c,-,M_amp_c,M_iletrna_c,M_ppi_c
+#R_LEUTRS,M_atp_c,M_leu__L_c,M_trnaleu_c,-,M_amp_c,M_leutrna_c,M_ppi_c
+#R_LYSTRS,M_atp_c,M_lys__L_c,M_trnalys_c,-,M_amp_c,M_lystrna_c,M_ppi_c
+#R_METTRS,M_atp_c,M_met__L_c,M_trnamet_c,-,M_amp_c,M_mettrna_c,M_ppi_c
+#R_PHETRS,M_atp_c,M_phe__L_c,M_trnaphe_c,-,M_amp_c,M_phetrna_c,M_ppi_c
+#R_PROTRS,M_atp_c,M_pro__L_c,M_trnapro_c,-,M_amp_c,M_ppi_c,M_protrna_c
+#R_SERTRS,M_atp_c,M_ser__L_c,M_trnaser_c,-,M_amp_c,M_ppi_c,M_sertrna_c
+#R_TRPTRS,M_atp_c,M_trnatrp_c,M_trp__L_c,-,M_amp_c,M_ppi_c,M_trptrna_c
+#R_TYRTRS,M_atp_c,M_trnatyr_c,M_tyr__L_c,-,M_amp_c,M_ppi_c,M_tyrtrna_c
+#R_VALTRS,M_atp_c,M_trnaval_c,M_val__L_c,-,M_amp_c,M_ppi_c,M_valtrna_c
+##Pyruvate Met
+M_ac_c,Acetate
+M_acald_c,Acetaldehyde
+M_accoa_c,Acetyl-CoA
+M_actp_c,Acetyl phosphate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_fdxo_42_c,Ferredoxin (oxidized form 4:2)
+M_fdxr_42_c,Ferredoxin (reduced form 4:2)
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hco3_c,Bicarbonate
+M_lac__L_c,L-Lactate
+M_mal__L_c,L-Malate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_oaa_c,Oxaloacetate
+M_pi_c,Phosphate
+M_pyr_c,Pyruvate
+R_ACALD,Acetaldehyde dehydrogenase (acetylating),0
+R_ACKr,Acetate kinase,1
+R_ACYP_2,Acylphosphatase (2),0
+R_LDH_L,L-lactate dehydrogenase,1
+R_ME1,Malic enzyme (NAD),0
+R_OAADC,Oxaloacetate decarboxylase,0
+R_PC,Pyruvate carboxylase,0
+R_POR,Pyruvate synthase,1
+R_PTAr,Phosphotransacetylase,1
+#R_ACALD,M_acald_c,M_coa_c,M_nad_c,-,M_accoa_c,M_h_c,M_nadh_c
+#R_ACKr,M_ac_c,M_atp_c,-,M_actp_c,M_adp_c
+#R_ACYP_2,M_actp_c,M_h2o_c,-,M_ac_c,M_h_c,M_pi_c
+#R_LDH_L,M_lac__L_c,M_nad_c,-,M_h_c,M_nadh_c,M_pyr_c
+#R_ME1,M_mal__L_c,M_nad_c,-,M_co2_c,M_nadh_c,M_pyr_c
+#R_OAADC,M_h_c,M_oaa_c,-,M_co2_c,M_pyr_c
+#R_PC,M_atp_c,M_hco3_c,M_pyr_c,-,M_adp_c,M_h_c,M_oaa_c,M_pi_c
+#R_POR,M_coa_c,M_fdxo_42_c,M_pyr_c,-,M_accoa_c,M_co2_c,M_fdxr_42_c,M_h_c
+#R_PTAr,M_accoa_c,M_pi_c,-,M_actp_c,M_coa_c
+##Alternate Carbon Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_dha_c,Dihydroxyacetone
+M_dhap_c,Dihydroxyacetone phosphate
+M_f6p_c,D-Fructose 6-phosphate
+M_gal_c,D-Galactose
+M_glc__D_c,D-Glucose
+M_glyald_c,D-Glyceraldehyde
+M_glyc3p_c,Glycerol 3-phosphate
+M_glyc_c,Glycerol
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_lcts_c,Lactose C12H22O11
+M_malt_c,Maltose C12H22O11
+M_man6p_c,D-Mannose 6-phosphate
+M_man_c,D-Mannose
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_pi_c,Phosphate
+M_xu5p__D_c,D-Xylulose 5-phosphate
+M_xylu__D_c,D-Xylulose
+R_ALCD19,Alcohol dehydrogenase (glycerol),1
+R_ALKP,Alkaline phosphatase,0
+R_G3PD1ir,Glycerol 3 phosphate dehydrogenase  NAD ,1
+R_GLYCDx,Glycerol dehydrogenase,1
+R_GLYK,Glycerol kinase,0
+R_HEX4,Hexokinase (D-mannose:ATP),0
+R_LACZ,B-galactosidase,0
+R_MALT,Alpha glucosidase,0
+R_MAN6PI,Mannose-6-phosphate isomerase,1
+R_XYLK,Xylulokinase,0
+#R_ALCD19,M_glyald_c,M_h_c,M_nadh_c,-,M_glyc_c,M_nad_c
+#R_ALKP,M_dhap_c,M_h2o_c,-,M_dha_c,M_pi_c
+#R_G3PD1ir,M_dhap_c,M_h_c,M_nadh_c,-,M_glyc3p_c,M_nad_c
+#R_GLYCDx,M_glyc_c,M_nad_c,-,M_dha_c,M_h_c,M_nadh_c
+#R_GLYK,M_atp_c,M_glyc_c,-,M_adp_c,M_glyc3p_c,M_h_c
+#R_HEX4,M_atp_c,M_man_c,-,M_adp_c,M_h_c,M_man6p_c
+#R_LACZ,M_h2o_c,M_lcts_c,-,M_gal_c,M_glc__D_c
+#R_MALT,M_h2o_c,M_malt_c,-,M_glc__D_c
+#R_MAN6PI,M_man6p_c,-,M_f6p_c
+#R_XYLK,M_atp_c,M_xylu__D_c,-,M_adp_c,M_h_c,M_xu5p__D_c
+##Others
+M_2pg_c,D-Glycerate 2-phosphate
+M_acetol_c,Acetol cytosol
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_creat_c,Creatine cytosol
+M_crtn_c,Creatinine
+M_dhap_c,Dihydroxyacetone phosphate
+M_for_c,Formate
+M_glyc__R_c,(R)-Glycerate
+M_h2o2_c,Hydrogen peroxide
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hco3_c,Bicarbonate
+M_mthgxl_c,Methylglyoxal
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh3_c,Ammonia
+M_nh4_c,Ammonium
+M_o2_c,O2 O2
+M_oxa_c,Oxalate
+M_pcreat_c,Phosphocreatine
+M_pi_c,Phosphate
+R_ALR2,Aldose reductase (methylglyoxal),0
+R_CRTNh,Creatinine amidohydrolase,0
+R_CRTNsyn,Creatinine synthase,0
+R_GLYCK2,Glycerate kinase,0
+R_HCO3E,HCO3 equilibration reaction,1
+R_MGSA,Methylglyoxal synthase,0
+R_NADHPO,NADH peroxidase,0
+R_NH3c,Ammomnium proton dissociation,1
+R_NOX,NADH oxidase,0
+R_OXADC,Oxalate decarboxylase,0
+#R_ALR2,M_h_c,M_mthgxl_c,M_nadph_c,-,M_acetol_c,M_nadp_c
+#R_CRTNh,M_crtn_c,M_h2o_c,-,M_creat_c
+#R_CRTNsyn,M_pcreat_c,-,M_crtn_c,M_h_c,M_pi_c
+#R_GLYCK2,M_atp_c,M_glyc__R_c,-,M_2pg_c,M_adp_c,M_h_c
+#R_HCO3E,M_co2_c,M_h2o_c,-,M_h_c,M_hco3_c
+#R_MGSA,M_dhap_c,-,M_mthgxl_c,M_pi_c
+#R_NADHPO,M_h2o2_c,M_h_c,M_nadh_c,-,M_h2o_c,M_nad_c
+#R_NH3c,M_h_c,M_nh3_c,-,M_nh4_c
+#R_NOX,M_h_c,M_nadh_c,M_o2_c,-,M_h2o2_c,M_nad_c
+#R_OXADC,M_h_c,M_oxa_c,-,M_co2_c,M_for_c
+##Starch Metabolism
+M_amylose300_e,Amylose (n=300 repeat units, alpha-1,4-glc)
+M_glc__D_e,D-Glucose
+M_h2o_e,H2O H2O
+M_malt_e,Maltose C12H22O11
+M_malttr_e,Maltotriose C18H32O16
+M_pullulan1200_e,Pullulan (n=1200 repeat units, alpha-1,4 and alph-1,6 bounds)
+M_starch1200_e,Starch n=1200 repeat units (300 repeat units amylose, 900 repeat units amylopectin, corresponds to potatoe starch)
+R_AMYLe,Amylose hydrolysis by alpha-1,4-amylase,0
+R_AMYe,Starch hydrolysis by alpha-1,4-amylase and alpha-1,6 pullulanase,0
+R_PULLe,Pullulane hydrolysis by alpha-1,6 pullulanase and ?,0
+#R_AMYLe,M_amylose300_e,M_h2o_e,-,M_glc__D_e,M_malt_e
+#R_AMYe,M_h2o_e,M_starch1200_e,-,M_glc__D_e,M_malt_e,M_malttr_e
+#R_PULLe,M_h2o_e,M_pullulan1200_e,-,M_malttr_e
+##Phenylalanine Tyrosine Tryptophan Biosynthesis
+M_2cpr5p_c,1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate
+M_34hpp_c,3-(4-Hydroxyphenyl)pyruvate
+M_3ig3p_c,C-(3-Indolyl)-glycerol 3-phosphate
+M_Largn_c,L-Arogenate
+M_akg_c,2-Oxoglutarate
+M_anth_c,Anthranilate
+M_chor_c,Chorismate
+M_co2_c,CO2 CO2
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_indole_c,Indole
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_phe__L_c,L-Phenylalanine
+M_phpyr_c,Phenylpyruvate
+M_pphn_c,Prephenate
+M_ppi_c,Diphosphate
+M_pran_c,N-(5-Phospho-D-ribosyl)anthranilate
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_pyr_c,Pyruvate
+M_ser__L_c,L-Serine
+M_trp__L_c,L-Tryptophan
+M_tyr__L_c,L-Tyrosine
+R_ANPRT,Anthranilate phosphoribosyltransferase,0
+R_ANS,Anthranilate synthase,0
+R_AROH,L-Arogenate hydro-lyase,0
+R_CHORM,Chorismate mutase,1
+R_IGPS,Indole-3-glycerol-phosphate synthase,0
+R_PHETA1,Phenylalanine transaminase,1
+R_PPND,Prephenate dehydrogenase,1
+R_PPNDH,Prephenate dehydratase,1
+R_PRAIi,Phosphoribosylanthranilate isomerase (irreversible),1
+R_TRPS1,Tryptophan synthase (indoleglycerol phosphate),1
+R_TRPS2,Tryptophan synthase (indole),0
+R_TRPS3,Tryptophan synthase (indoleglycerol phosphate),0
+R_TYRTA,Tyrosine transaminase,1
+#R_ANPRT,M_anth_c,M_prpp_c,-,M_ppi_c,M_pran_c
+#R_ANS,M_chor_c,M_gln__L_c,-,M_anth_c,M_glu__L_c,M_h_c,M_pyr_c
+#R_AROH,M_Largn_c,-,M_co2_c,M_h2o_c,M_phe__L_c
+#R_CHORM,M_chor_c,-,M_pphn_c
+#R_IGPS,M_2cpr5p_c,M_h_c,-,M_3ig3p_c,M_co2_c,M_h2o_c
+#R_PHETA1,M_akg_c,M_phe__L_c,-,M_glu__L_c,M_phpyr_c
+#R_PPNDH,M_h_c,M_pphn_c,-,M_co2_c,M_h2o_c,M_phpyr_c
+#R_PPND,M_nad_c,M_pphn_c,-,M_34hpp_c,M_co2_c,M_nadh_c
+#R_PRAIi,M_pran_c,-,M_2cpr5p_c
+#R_TRPS1,M_3ig3p_c,M_ser__L_c,-,M_g3p_c,M_h2o_c,M_trp__L_c
+#R_TRPS2,M_indole_c,M_ser__L_c,-,M_h2o_c,M_trp__L_c
+#R_TRPS3,M_3ig3p_c,-,M_g3p_c,M_indole_c
+#R_TYRTA,M_akg_c,M_tyr__L_c,-,M_34hpp_c,M_glu__L_c
+##Riboflavin Metabolism
+M_25dhpp_c,2 5 Diamino 6 hydroxy 4  5  phosphoribosylamino  pyrimidine C9H14N5O8P
+M_4r5au_c,4-(1-D-Ribitylamino)-5-aminouracil
+M_5aprbu_c,5-Amino-6-(5-phosphoribitylamino)uracil
+M_5apru_c,5-Amino-6-(5-phosphoribosylamino)uracil
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_db4p_c,3,4-dihydroxy-2-butanone 4-phosphate
+M_dmlz_c,6,7-Dimethyl-8-(1-D-ribityl)lumazine
+M_fad_c,Flavin adenine dinucleotide oxidized
+M_fmn_c,FMN C17H19N4O9P
+M_for_c,Formate
+M_gtp_c,GTP C10H12N5O14P3
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_ribflv_c,Riboflavin C17H20N4O6
+M_ru5p__D_c,D-Ribulose 5-phosphate
+R_APRAUR,5-amino-6-(5-phosphoribosylamino)uracil reductase,0
+R_DB4PS,3,4-Dihydroxy-2-butanone-4-phosphate synthase,0
+R_DHPPDA,Diaminohydroxyphosphoribosylaminopyrimidine deaminase,0
+R_FMNAT,FMN adenylyltransferase,0
+R_GTPCII,GTP cyclohydrolase II,0
+R_PMDPHT,Pyrimidine phosphatase,0
+R_RBFK,Riboflavin kinase,0
+R_RBFSa,Riboflavin synthase,0
+R_RBFSb,Riboflavin synthase,0
+#R_APRAUR,M_5apru_c,M_h_c,M_nadph_c,-,M_5aprbu_c,M_nadp_c
+#R_DB4PS,M_ru5p__D_c,-,M_db4p_c,M_for_c,M_h_c
+#R_DHPPDA,M_25dhpp_c,M_h2o_c,M_h_c,-,M_5apru_c,M_nh4_c
+#R_FMNAT,M_atp_c,M_fmn_c,M_h_c,-,M_fad_c,M_ppi_c
+#R_GTPCII,M_gtp_c,M_h2o_c,-,M_25dhpp_c,M_for_c,M_h_c,M_ppi_c
+#R_PMDPHT,M_5aprbu_c,M_h2o_c,-,M_4r5au_c,M_pi_c
+#R_RBFK,M_atp_c,M_ribflv_c,-,M_adp_c,M_fmn_c,M_h_c
+#R_RBFSa,M_4r5au_c,M_db4p_c,-,M_dmlz_c,M_h2o_c,M_pi_c
+#R_RBFSb,M_dmlz_c,-,M_4r5au_c,M_ribflv_c
+##Arabinose Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_arab__L_c,L-Arabinose
+M_atp_c,ATP C10H12N5O13P3
+M_h_c,H+
+M_rbl__L_c,L-Ribulose
+M_ru5p__L_c,L-Ribulose 5-phosphate
+R_ARAI,L-arabinose isomerase,1
+R_RBK_L1,L-ribulokinase (L-ribulose),1
+#R_ARAI,M_arab__L_c,-,M_rbl__L_c
+#R_RBK_L1,M_atp_c,M_rbl__L_c,-,M_adp_c,M_h_c,M_ru5p__L_c
+##Threonine Metabolism
+M_2obut_c,2-Oxobutanoate
+M_4pasp_c,4-Phospho-L-aspartate
+M_acald_c,Acetaldehyde
+M_adp_c,ADP C10H12N5O10P2
+M_amp_c,AMP C10H12N5O7P
+M_asp__L_c,L-Aspartate
+M_aspsa_c,L-Aspartate 4-semialdehyde
+M_athr__L_c,L-Allo-threonine
+M_atp_c,ATP C10H12N5O13P3
+M_gly_c,Glycine
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hom__L_c,L-Homoserine
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_phom_c,O-Phospho-L-homoserine
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_thr__L_c,L-Threonine
+M_thrtrna_c,L-Threonyl-tRNA(Thr)
+M_trnathr_c,TRNA(Thr)
+R_ASAD,Aspartate-semialdehyde dehydrogenase,1
+R_ASPK,Aspartate kinase,1
+R_HSDy,Homoserine dehydrogenase (NADPH),1
+R_HSK,Homoserine kinase,0
+R_THRA2,L-allo-Threonine Aldolase,1
+R_THRD_L,L-threonine deaminase,0
+R_THRS,Threonine synthase,0
+R_THRTRS,Threonyl-tRNA synthetase,0
+#R_ASAD,M_aspsa_c,M_nadp_c,M_pi_c,-,M_4pasp_c,M_h_c,M_nadph_c
+#R_ASPK,M_asp__L_c,M_atp_c,-,M_4pasp_c,M_adp_c
+#R_HSDy,M_hom__L_c,M_nadp_c,-,M_aspsa_c,M_h_c,M_nadph_c
+#R_HSK,M_atp_c,M_hom__L_c,-,M_adp_c,M_h_c,M_phom_c
+#R_THRA2,M_athr__L_c,-,M_acald_c,M_gly_c
+#R_THRD_L,M_thr__L_c,-,M_2obut_c,M_nh4_c
+#R_THRS,M_h2o_c,M_phom_c,-,M_pi_c,M_thr__L_c
+#R_THRTRS,M_atp_c,M_thr__L_c,M_trnathr_c,-,M_amp_c,M_ppi_c,M_thrtrna_c
+##Pyrimidine Biosynthesis
+M_adp_c,ADP C10H12N5O10P2
+M_asp__L_c,L-Aspartate
+M_atp_c,ATP C10H12N5O13P3
+M_cbasp_c,N-Carbamoyl-L-aspartate
+M_cbp_c,Carbamoyl phosphate
+M_cdp_c,CDP C9H12N3O11P2
+M_co2_c,CO2 CO2
+M_ctp_c,CTP C9H12N3O14P3
+M_dhor__S_c,(S)-Dihydroorotate
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hco3_c,Bicarbonate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_orot5p_c,Orotidine 5-phosphate
+M_orot_c,Orotate C5H3N2O4
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_udp_c,UDP C9H11N2O12P2
+M_ump_c,UMP C9H11N2O9P
+R_ASPCT,Aspartate carbamoyltransferase,0
+R_CBPS,Carbamoyl-phosphate synthase (glutamine-hydrolysing),0
+R_DHORD_NAD,Dihydoorotic acid dehydrogenase,1
+R_DHORTS,Dihydroorotase,1
+R_NDPK3,Nucleoside-diphosphate kinase (ATP:CDP),1
+R_OMPDC,Orotidine-5-phosphate decarboxylase,0
+R_ORPT,Orotate phosphoribosyltransferase,1
+R_UMPK,UMP kinase,0
+#R_ASPCT,M_asp__L_c,M_cbp_c,-,M_cbasp_c,M_h_c,M_pi_c
+#R_CBPS,M_atp_c,M_gln__L_c,M_h2o_c,M_hco3_c,-,M_adp_c,M_cbp_c,M_glu__L_c,M_h_c,M_pi_c
+#R_DHORD_NAD,M_dhor__S_c,M_nad_c,-,M_nadh_c,M_orot_c
+#R_DHORTS,M_dhor__S_c,M_h2o_c,-,M_cbasp_c,M_h_c
+#R_NDPK3,M_atp_c,M_cdp_c,-,M_adp_c,M_ctp_c
+#R_OMPDC,M_h_c,M_orot5p_c,-,M_co2_c,M_ump_c
+#R_ORPT,M_orot5p_c,M_ppi_c,-,M_orot_c,M_prpp_c
+#R_UMPK,M_atp_c,M_ump_c,-,M_adp_c,M_udp_c
+##NAD Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_amp_c,AMP C10H12N5O7P
+M_asp__L_c,L-Aspartate
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_dhap_c,Dihydroxyacetone phosphate
+M_dnad_c,Deamino-NAD+
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_iasp_c,Iminoaspartate
+M_nac_c,Nicotinate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_ncam_c,Nicotinamide
+M_nh4_c,Ammonium
+M_nicrns_c,Nicotinate D-ribonucleoside
+M_nicrnt_c,Nicotinate D-ribonucleotide
+M_nmn_c,NMN C11H14N2O8P
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_quln_c,Quinolinate
+M_r1p_c,Alpha-D-Ribose 1-phosphate
+M_rnam_c,N Ribosylnicotinamide C11H15N2O5
+R_ASPO2,L-aspartate oxidase,0
+R_NADK,NAD kinase,0
+R_NADS1,NAD synthase (nh3),0
+R_NMNAT,Nicotinamide-nucleotide adenylyltransferase,1
+R_NMNHYD,Nicotinamide ribonucleotide phosphohydrolase,0
+R_NNAM,Nicotinamidase,0
+R_NNATr,Nicotinate-nucleotide adenylyltransferase,1
+R_NNDPR,Nicotinate-nucleotide diphosphorylase (carboxylating),0
+R_NP1,Nucleotide phosphatase,1
+R_NT5C,5-nucleotidase,0
+R_PNP,Purine nucleoside phosphorylase,1
+R_QULNS,Quinolinate synthase,0
+#R_ASPO2,M_asp__L_c,M_nad_c,-,M_h_c,M_iasp_c,M_nadh_c
+#R_NADK,M_atp_c,M_nad_c,-,M_adp_c,M_h_c,M_nadp_c
+#R_NADS1,M_atp_c,M_dnad_c,M_nh4_c,-,M_amp_c,M_h_c,M_nad_c,M_ppi_c
+#R_NMNAT,M_atp_c,M_h_c,M_nmn_c,-,M_nad_c,M_ppi_c
+#R_NNAM,M_h2o_c,M_ncam_c,-,M_nac_c,M_nh4_c
+#R_NNATr,M_atp_c,M_h_c,M_nicrnt_c,-,M_dnad_c,M_ppi_c
+#R_NNDPR,M_h_c,M_prpp_c,M_quln_c,-,M_co2_c,M_nicrnt_c,M_ppi_c
+#R_NP1,M_h_c,M_nac_c,M_r1p_c,-,M_nicrns_c,M_pi_c
+#R_NT5C,M_h2o_c,M_nicrnt_c,-,M_nicrns_c,M_pi_c
+#R_NMNHYD,M_h2o_c,M_nmn_c,-,M_pi_c,M_rnam_c
+#R_PNP,M_pi_c,M_rnam_c,-,M_h_c,M_ncam_c,M_r1p_c
+#R_QULNS,M_dhap_c,M_iasp_c,-,M_h2o_c,M_pi_c,M_quln_c
+##Glutamate Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_akg_c,2-Oxoglutarate
+M_asp__L_c,L-Aspartate
+M_atp_c,ATP C10H12N5O13P3
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_oaa_c,Oxaloacetate
+M_pi_c,Phosphate
+R_ASPTA,Aspartate transaminase,1
+R_GLNS,Glutamine synthetase,0
+R_GLUSy,Glutamate synthase (NADPH),0
+#R_ASPTA,M_akg_c,M_asp__L_c,-,M_glu__L_c,M_oaa_c
+#R_GLNS,M_atp_c,M_glu__L_c,M_nh4_c,-,M_adp_c,M_gln__L_c,M_h_c,M_pi_c
+#R_GLUSy,M_akg_c,M_gln__L_c,M_h_c,M_nadph_c,-,M_glu__L_c,M_nadp_c
+##Fatty Acid Synthesis
+M_3hoctaACP_c,(R)-3-Hydroxyoctadecanoyl-[acyl-carrier protein]
+M_3hpalmACP_c,R-3-hydroxypalmitoyl-[acyl-carrier protein]
+M_ACP_c,Acyl carrier protein
+M_acACP_c,Acetyl-ACP
+M_accoa_c,Acetyl-CoA
+M_actACP_c,Acetoacetyl-ACP
+M_adp_c,ADP C10H12N5O10P2
+M_arachACP_c,Eicosanoyl-ACP (n-C20:0)
+M_aracheACP_c,Cis-eicosa-11-enoyl-[acyl-carrier protein] (n-C20:1)
+M_atp_c,ATP C10H12N5O13P3
+M_behenACP_c,Docosanoyl-ACP (n-C22:0)
+M_beheneACP_c,Dosa-11-enoyl-ACP (n-C20:1)
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_dcaACP_c,Decanoyl-ACP (n-C10:0ACP)
+M_ddcaACP_c,Dodecanoyl-ACP (n-C12:0ACP)
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hco3_c,Bicarbonate
+M_hdeACP_c,Cis-hexadec-9-enoyl-[acyl-carrier protein] (n-C16:1)
+M_lgnACP_c,Tetracosanoyl-ACP (n-C24:0)
+M_malACP_c,Malonyl-[acyl-carrier protein]
+M_malcoa_c,Malonyl CoA C24H33N7O19P3S
+M_myrsACP_c,Myristoyl-ACP (n-C14:0ACP)
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_ocdcaACP_c,Octadecanoyl-ACP (n-C18:0ACP)
+M_ocdcyaACP_c,Octadecynoyl ACP  n C182ACP  C29H51N2O8PRS
+M_octeACP_c,Cis-octadec-11-enoyl-[acyl-carrier protein] (n-C18:1)
+M_palmACP_c,Palmitoyl-ACP (n-C16:0ACP)
+M_pi_c,Phosphate
+M_tdeACP_c,Cis-tetradec-7-enoyl-[acyl-carrier protein] (n-C14:1)
+R_ACCOAC,Acetyl-CoA carboxylase,0
+R_ACOATA,Acetyl-CoA ACP transacylase,0
+R_C100SN,Fatty acid biosynthesis (n-C10:0),0
+R_FASC120ACP,Fatty acid biosynthesis (n-C12:0),0
+R_FASC140ACP,Fatty acid biosynthesis (n-C14:0),0
+R_FASC141ACP,Fatty acid biosynthesis (n-C14:1),0
+R_FASC160ACP,Fatty acid biosynthesis (n-C16:0),0
+R_FASC161ACP,Fatty acid biosynthesis (n-C16:1),0
+R_FASC180ACP,Fatty acid biosynthesis (n-C18:0),0
+R_FASC181ACP,Fatty acid biosynthesis (n-C18:1),0
+R_FASC182ACP,Fatty acid biosynthesis (n-C18:2),0
+R_FASC200ACP,Fatty acid biosynthesis (n-C20:0),0
+R_FASC201ACP,Fatty acid biosynthesis (n-C20:1),0
+R_FASC220ACP,Fatty acid biosynthesis (n-C22:0),0
+R_FASC221ACP,Fatty acid biosynthesis (n-C22:1),0
+R_FASC240ACP,Fatty acid biosynthesis (n-C24:0),0
+R_KAS14,Beta-ketoacyl-ACP synthase,0
+R_KAS_HP,3-hydroxy-palmetoyl-ACP synthesis,0
+R_KAS_HP2,3-hydroxy-octadecanoyl-ACP synthesis,0
+R_MCOATA,Malonyl-CoA-ACP transacylase,1
+#R_ACCOAC,M_accoa_c,M_atp_c,M_hco3_c,-,M_adp_c,M_h_c,M_malcoa_c,M_pi_c
+#R_ACOATA,M_ACP_c,M_accoa_c,-,M_acACP_c,M_coa_c
+#R_C100SN,M_actACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_dcaACP_c,M_h2o_c,M_nadp_c
+#R_FASC120ACP,M_dcaACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_ddcaACP_c,M_h2o_c,M_nadp_c
+#R_FASC140ACP,M_ddcaACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_myrsACP_c,M_nadp_c
+#R_FASC141ACP,M_ddcaACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_nadp_c,M_tdeACP_c
+#R_FASC160ACP,M_h_c,M_malACP_c,M_myrsACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_nadp_c,M_palmACP_c
+#R_FASC161ACP,M_h_c,M_malACP_c,M_myrsACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_hdeACP_c,M_nadp_c
+#R_FASC180ACP,M_h_c,M_malACP_c,M_nadph_c,M_palmACP_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_nadp_c,M_ocdcaACP_c
+#R_FASC181ACP,M_h_c,M_malACP_c,M_nadph_c,M_palmACP_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_nadp_c,M_octeACP_c
+#R_FASC182ACP,M_h_c,M_malACP_c,M_palmACP_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_ocdcyaACP_c
+#R_FASC200ACP,M_h_c,M_malACP_c,M_nadph_c,M_ocdcaACP_c,-,M_ACP_c,M_arachACP_c,M_co2_c,M_h2o_c,M_nadp_c
+#R_FASC201ACP,M_h_c,M_malACP_c,M_nadph_c,M_ocdcaACP_c,-,M_ACP_c,M_aracheACP_c,M_co2_c,M_h2o_c,M_nadp_c
+#R_FASC220ACP,M_arachACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_behenACP_c,M_co2_c,M_h2o_c,M_nadp_c
+#R_FASC221ACP,M_arachACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_beheneACP_c,M_co2_c,M_h2o_c,M_nadp_c
+#R_FASC240ACP,M_behenACP_c,M_h_c,M_malACP_c,M_nadph_c,-,M_ACP_c,M_co2_c,M_h2o_c,M_lgnACP_c,M_nadp_c
+#R_KAS14,M_acACP_c,M_h_c,M_malACP_c,-,M_ACP_c,M_actACP_c,M_co2_c
+#R_KAS_HP,M_h_c,M_malACP_c,M_myrsACP_c,M_nadph_c,-,M_3hpalmACP_c,M_ACP_c,M_co2_c,M_nadp_c
+#R_KAS_HP2,M_h_c,M_malACP_c,M_nadph_c,M_palmACP_c,-,M_3hoctaACP_c,M_ACP_c,M_co2_c,M_nadp_c
+#R_MCOATA,M_ACP_c,M_malcoa_c,-,M_coa_c,M_malACP_c
+##Histidine Biosynthesis
+M_aicar_c,5-Amino-1-(5-Phospho-D-ribosyl)imidazole-4-carboxamide
+M_akg_c,2-Oxoglutarate
+M_atp_c,ATP C10H12N5O13P3
+M_eig3p_c,D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_his__L_c,L-Histidine
+M_hisp_c,L-Histidinol phosphate
+M_histd_c,L-Histidinol
+M_imacp_c,3-(Imidazol-4-yl)-2-oxopropyl phosphate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_prbamp_c,1-(5-Phosphoribosyl)-AMP
+M_prbatp_c,1-(5-Phosphoribosyl)-ATP
+M_prfp_c,1-(5-Phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide
+M_prlp_c,5-[(5-phospho-1-deoxyribulos-1-ylamino)methylideneamino]-1-(5-phosphoribosyl)imidazole-4-carboxamide
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+R_ATPPRT,ATP phosphoribosyltransferase,1
+R_HISTD,Histidinol dehydrogenase,0
+R_HISTP,Histidinol-phosphatase,0
+R_HSTPT,Histidinol-phosphate transaminase,1
+R_IG3PS,Imidazole-glycerol-3-phosphate synthase,0
+R_IGPDH,Imidazoleglycerol-phosphate dehydratase,0
+R_PRAMPC,Phosphoribosyl-AMP cyclohydrolase,0
+R_PRATPP,Phosphoribosyl-ATP pyrophosphatase,0
+R_PRMICI,1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide isomerase,0
+#R_ATPPRT,M_atp_c,M_prpp_c,-,M_ppi_c,M_prbatp_c
+#R_HISTD,M_h2o_c,M_histd_c,M_nad_c,-,M_h_c,M_his__L_c,M_nadh_c
+#R_HISTP,M_h2o_c,M_hisp_c,-,M_histd_c,M_pi_c
+#R_HSTPT,M_glu__L_c,M_imacp_c,-,M_akg_c,M_hisp_c
+#R_IG3PS,M_gln__L_c,M_prlp_c,-,M_aicar_c,M_eig3p_c,M_glu__L_c,M_h_c
+#R_IGPDH,M_eig3p_c,-,M_h2o_c,M_imacp_c
+#R_PRAMPC,M_h2o_c,M_prbamp_c,-,M_prfp_c
+#R_PRATPP,M_h2o_c,M_prbatp_c,-,M_h_c,M_ppi_c,M_prbamp_c
+#R_PRMICI,M_prfp_c,-,M_prlp_c
+##Energy Metabolism
+M_2ddg6p_c,2-Dehydro-3-deoxy-D-gluconate 6-phosphate
+M_2dr5p_c,2-Deoxy-D-ribose 5-phosphate
+M_6pgc_c,6-Phospho-D-gluconate
+M_acald_c,Acetaldehyde
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_fad_c,Flavin adenine dinucleotide oxidized
+M_fadh2_c,Flavin adenine dinucleotide reduced
+M_fdxo_42_c,Ferredoxin (oxidized form 4:2)
+M_fdxr_42_c,Ferredoxin (reduced form 4:2)
+M_fe2_e,Fe2+ mitochondria
+M_fe3_e,Iron (Fe3+)
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_h2_c,Hydrogen
+M_h2o_c,H2O H2O
+M_h2s_c,Hydrogen sulfide
+M_h_c,H+
+M_h_e,H+
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_q_c,Ubiquinone
+M_qh2_c,Ubiquinol
+M_s_c,Sulfur
+M_trdox_c,Oxidized thioredoxin
+M_trdrd_c,Reduced thioredoxin
+R_ATPS1,H+-exporting ATPase,0
+R_ATPS10_3,ATP synthase (10 protons for three ATP),0
+R_ATPS4r,ATP synthase (four protons for one ATP),0
+R_DRPA,Deoxyribose-phosphate aldolase,1
+R_EDD,6-phosphogluconate dehydratase,0
+R_FERIRDe,Quinon:iron(III) oxidoreductase,0
+R_HYDFDN,Ferredoxin NADH linked hydrogenase,0
+R_NADHDH,NADH dehydrogenase,0
+R_PPA,Inorganic diphosphatase,0
+R_SUCD3,Succinate dehydrogenase cytochrome b,1
+R_SULFDH,Sulfide dehydrogenase,0
+R_TRDR,Thioredoxin reductase (NADPH),0
+#R_ATPS1,M_atp_c,M_h2o_c,M_h_c,-,M_adp_c,M_h_e,M_pi_c
+#R_ATPS10_3,M_adp_c,M_h_e,M_pi_c,-,M_atp_c,M_h2o_c,M_h_c
+#R_ATPS4r,M_adp_c,M_h_e,M_pi_c,-,M_atp_c,M_h2o_c,M_h_c
+#R_DRPA,M_2dr5p_c,-,M_acald_c,M_g3p_c
+#R_FERIRDe,M_fe3_e,M_qh2_c,-,M_fe2_e,M_h_e,M_q_c
+#R_HYDFDN,M_fdxr_42_c,M_h_c,M_nadh_c,-,M_fdxo_42_c,M_h2_c,M_nad_c
+#R_NADHDH,M_h_c,M_nadh_c,M_q_c,-,M_h_e,M_nad_c,M_qh2_c
+#R_EDD,M_6pgc_c,-,M_2ddg6p_c,M_h2o_c
+#R_PPA,M_h2o_c,M_ppi_c,-,M_h_c,M_pi_c
+#R_SUCD3,M_fadh2_c,M_q_c,-,M_fad_c,M_qh2_c
+#R_SULFDH,M_h_c,M_nadph_c,M_s_c,-,M_h2s_c,M_nadp_c
+#R_TRDR,M_h_c,M_nadph_c,M_trdox_c,-,M_nadp_c,M_trdrd_c
+##Biotin Biosynthesis
+M_atp_c,ATP C10H12N5O13P3
+M_btamp_c,Biotinyl 5  AMP C20H27N7O9PS
+M_btn_c,Biotin
+M_dtbt_c,Dethiobiotin
+M_h2s_c,Hydrogen sulfide
+M_h_c,H+
+M_ppi_c,Diphosphate
+M_s_c,Sulfur
+R_BACCL,Biotin acetyl CoA carboxylase ligase,0
+R_BTS3r,Biotin synthase,0
+#R_BACCL,M_atp_c,M_btn_c,M_h_c,-,M_btamp_c,M_ppi_c
+#R_BTS3r,M_dtbt_c,M_s_c,-,M_btn_c,M_h2s_c
+##Carbohydrate Metabolism
+M_2dr1p_c,2-Deoxy-D-ribose 1-phosphate
+M_2dr5p_c,2-Deoxy-D-ribose 5-phosphate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_cellb_c,Cellobiose
+M_dhap_c,Dihydroxyacetone phosphate
+M_e4p_c,D-Erythrose 4-phosphate
+M_f1p_c,D-Fructose 1-phosphate
+M_f6p_c,D-Fructose 6-phosphate
+M_fcl__L_c,L-fuculose
+M_fdp_c,D-Fructose 1,6-bisphosphate
+M_fru_c,D-Fructose
+M_fuc__L_c,L-Fucose
+M_g1p_c,D-Glucose 1-phosphate
+M_g6p_c,D-Glucose 6-phosphate
+M_gal_bD_c,Beta D-Galactose
+M_gal_c,D-Galactose
+M_glc__D_c,D-Glucose
+M_glc__aD_c,Alpha D-glucose
+M_glc__bD_c,D-Glucose
+M_glyald_c,D-Glyceraldehyde
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_ksi_c,Keratan sulfate I
+M_ksi_deg1_c,Keratan sulfate I, degradation product 1
+M_r1p_c,Alpha-D-Ribose 1-phosphate
+M_r5p_c,Alpha-D-Ribose 5-phosphate
+M_ru5p__L_c,L-Ribulose 5-phosphate
+M_s17bp_c,Sedoheptulose 1,7-bisphosphate
+M_s2l2fn2m2masn_c,PA6
+M_s2l2n2m2masn_c,De-Fuc form of PA6
+M_xu5p__D_c,D-Xylulose 5-phosphate
+R_BGLA,Beta-glucosidase,0
+R_FBA2,D Fructose 1 phosphate D glyceraldehyde 3 phosphate lyase,1
+R_FBA3,Sedoheptulose 1,7-bisphosphate D-glyceraldehyde-3-phosphate-lyase,1
+R_FCI,L-fucose isomerase,1
+R_FRUK,Fructose-1-phosphate kinase,1
+R_FUCASE,Alpha-fucosidase, cytosol,0
+R_FUCASE2,Alpha-fucosidase, cytosol,0
+R_GALM1,Aldose 1-epimerase (glucose),0
+R_GALM2,Aldose 1-epimerase (galactose),0
+R_GalMr,Aldose 1-epimerase,1
+R_HEX7,Hexokinase (D-fructose:ATP),0
+R_PGMT,Phosphoglucomutase,1
+R_PPM,Phosphopentomutase,1
+R_PPM2,Phosphopentomutase 2 (deoxyribose),1
+R_RBP4E,L-ribulose-phosphate 4-epimerase,1
+#R_BGLA,M_cellb_c,M_h2o_c,-,M_glc__D_c
+#R_FBA2,M_f1p_c,-,M_dhap_c,M_glyald_c
+#R_FBA3,M_s17bp_c,-,M_dhap_c,M_e4p_c
+#R_FCI,M_fuc__L_c,-,M_fcl__L_c
+#R_FRUK,M_atp_c,M_f1p_c,-,M_adp_c,M_fdp_c,M_h_c
+#R_FUCASE,M_h2o_c,M_s2l2fn2m2masn_c,-,M_fuc__L_c,M_s2l2n2m2masn_c
+#R_FUCASE2,M_h2o_c,M_ksi_c,-,M_fuc__L_c,M_ksi_deg1_c
+#R_GALM1,M_glc__bD_c,-,M_glc__D_c
+#R_GALM2,M_gal_bD_c,-,M_gal_c
+#R_GalMr,M_glc__aD_c,-,M_glc__bD_c
+#R_HEX7,M_atp_c,M_fru_c,-,M_adp_c,M_f6p_c,M_h_c
+#R_PGMT,M_g1p_c,-,M_g6p_c
+#R_PPM,M_r1p_c,-,M_r5p_c
+#R_PPM2,M_2dr1p_c,-,M_2dr5p_c
+#R_RBP4E,M_ru5p__L_c,-,M_xu5p__D_c
+##Cellulose Metabolism
+M_6pgg_c,6-Phospho-beta-D-glucosyl-(1,4)-D-glucose
+M_cell4_c,Cellulose (n=4 repeating units)
+M_cell4_e,Cellulose (n=4 repeating units)
+M_cell500_e,Celluose (n=500 repeating units, beta-1,4 glc)
+M_cell6_c,Cellulose (n=6 repeating units)
+M_cellb_c,Cellobiose
+M_g1p_c,D-Glucose 1-phosphate
+M_g6p_c,D-Glucose 6-phosphate
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_h2o_e,H2O H2O
+M_pi_c,Phosphate
+R_BGLA1,6-phospho-beta-glucosidase,0
+R_CELASE1,Celluase,0
+R_CELASE2,Celluase,0
+R_CEPA,Cellobiose phosphorylase,1
+R_EGLUCe,Endoglucanase (beta-1,4 glc) (extracellular),0
+#R_BGLA1,M_6pgg_c,M_h2o_c,-,M_g6p_c,M_glc__D_c
+#R_CELASE1,M_cell4_c,M_h2o_c,-,M_cellb_c
+#R_CELASE2,M_cell6_c,M_h2o_c,-,M_cellb_c
+#R_CEPA,M_cellb_c,M_pi_c,-,M_g1p_c,M_glc__D_c
+#R_EGLUCe,M_cell500_e,M_h2o_e,-,M_cell4_e
+##Butanoate Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_btcoa_c,Butanoyl-CoA
+M_but_c,Butyrate (n-C4:0)
+M_butpi_c,Butanoyl phosphate
+M_coa_c,Coenzyme A
+M_pi_c,Phosphate
+R_BUTKr,Butyrate kinase,0
+R_PBUTT,Phosphate butyryltransferase,1
+#R_BUTKr,M_atp_c,M_but_c,-,M_adp_c,M_butpi_c
+#R_PBUTT,M_btcoa_c,M_pi_c,-,M_butpi_c,M_coa_c
+##Terpenoid biosynthesis
+M_2me4p_c,2-C-methyl-D-erythritol 4-phosphate
+M_2mecdp_c,2-C-methyl-D-erythritol 2,4-cyclodiphosphate
+M_2p4c2me_c,2-phospho-4-(cytidine 5-diphospho)-2-C-methyl-D-erythritol
+M_4c2me_c,4-(cytidine 5-diphospho)-2-C-methyl-D-erythritol
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_cmp_c,CMP C9H12N3O8P
+M_co2_c,CO2 CO2
+M_ctp_c,CTP C9H12N3O14P3
+M_dmpp_c,Dimethylallyl diphosphate
+M_dxyl5p_c,1-deoxy-D-xylulose 5-phosphate
+M_frdp_c,Farnesyl diphosphate
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_grdp_c,Geranyl diphosphate
+M_h2mb4p_c,1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_ipdp_c,Isopentenyl diphosphate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_octdp_c,All-trans-Octaprenyl diphosphate
+M_ppi_c,Diphosphate
+M_pyr_c,Pyruvate
+R_CDPMEK,4-(cytidine 5-diphospho)-2-C-methyl-D-erythritol kinase,0
+R_DMATT,Dimethylallyltranstransferase,0
+R_DXPRIi,1-deoxy-D-xylulose reductoisomerase,1
+R_DXPS,1-deoxy-D-xylulose 5-phosphate synthase,0
+R_GRTT,Geranyltranstransferase,0
+R_IPDDI,Isopentenyl-diphosphate D-isomerase,1
+R_IPDPS,1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp),0
+R_MECDPDH2,2C-methyl-D-erythritol 2,4 cyclodiphosphate dehydratase,0
+R_MECDPS,2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase,0
+R_MEPCT,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase,0
+R_OCTDPS,Octaprenyl pyrophosphate synthase,0
+#R_CDPMEK,M_4c2me_c,M_atp_c,-,M_2p4c2me_c,M_adp_c,M_h_c
+#R_DMATT,M_dmpp_c,M_ipdp_c,-,M_grdp_c,M_ppi_c
+#R_DXPRIi,M_dxyl5p_c,M_h_c,M_nadph_c,-,M_2me4p_c,M_nadp_c
+#R_DXPS,M_g3p_c,M_h_c,M_pyr_c,-,M_co2_c,M_dxyl5p_c
+#R_GRTT,M_grdp_c,M_ipdp_c,-,M_frdp_c,M_ppi_c
+#R_IPDDI,M_ipdp_c,-,M_dmpp_c
+#R_IPDPS,M_h2mb4p_c,M_h_c,M_nadh_c,-,M_h2o_c,M_ipdp_c,M_nad_c
+#R_MECDPDH2,M_2mecdp_c,M_nadh_c,-,M_h2mb4p_c,M_h2o_c,M_nad_c
+#R_MECDPS,M_2p4c2me_c,-,M_2mecdp_c,M_cmp_c
+#R_MEPCT,M_2me4p_c,M_ctp_c,M_h_c,-,M_4c2me_c,M_ppi_c
+#R_OCTDPS,M_frdp_c,M_ipdp_c,-,M_octdp_c,M_ppi_c
+##Chorismate Biosynthesis
+M_2dda7p_c,2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate
+M_3dhq_c,3-Dehydroquinate
+M_3dhsk_c,3-Dehydroshikimate
+M_3psme_c,5-O-(1-Carboxyvinyl)-3-phosphoshikimate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_chor_c,Chorismate
+M_e4p_c,D-Erythrose 4-phosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_pep_c,Phosphoenolpyruvate
+M_pi_c,Phosphate
+M_skm5p_c,Shikimate 5-phosphate
+M_skm_c,Shikimate
+R_CHORS,Chorismate synthase,0
+R_DDPA,3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase,0
+R_DHQS,3-dehydroquinate synthase,0
+R_DHQTi,3-dehydroquinate dehydratase, irreversible,1
+R_PSCVT,3-phosphoshikimate 1-carboxyvinyltransferase,1
+R_SHK3Dr,Shikimate dehydrogenase,1
+R_SHKK,Shikimate kinase,0
+#R_CHORS,M_3psme_c,-,M_chor_c,M_pi_c
+#R_DDPA,M_e4p_c,M_h2o_c,M_pep_c,-,M_2dda7p_c,M_pi_c
+#R_DHQTi,M_3dhq_c,-,M_3dhsk_c,M_h2o_c
+#R_DHQS,M_2dda7p_c,-,M_3dhq_c,M_pi_c
+#R_PSCVT,M_pep_c,M_skm5p_c,-,M_3psme_c,M_pi_c
+#R_SHK3Dr,M_3dhsk_c,M_h_c,M_nadph_c,-,M_nadp_c,M_skm_c
+#R_SHKK,M_atp_c,M_skm_c,-,M_adp_c,M_h_c,M_skm5p_c
+##Pyrimidine Metabolism
+M_2dr1p_c,2-Deoxy-D-ribose 1-phosphate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_cdp_c,CDP C9H12N3O11P2
+M_cmp_c,CMP C9H12N3O8P
+M_csn_c,Cytosine
+M_ctp_c,CTP C9H12N3O14P3
+M_cytd_c,Cytidine
+M_dcdp_c,DCDP C9H12N3O10P2
+M_dcmp_c,DCMP C9H12N3O7P
+M_dctp_c,DCTP C9H12N3O13P3
+M_dcyt_c,Deoxycytidine
+M_dtdp_c,DTDP C10H13N2O11P2
+M_dtmp_c,DTMP C10H13N2O8P
+M_dttp_c,DTTP C10H13N2O14P3
+M_dudp_c,DUDP C9H11N2O11P2
+M_dump_c,DUMP C9H11N2O8P
+M_duri_c,Deoxyuridine
+M_dutp_c,DUTP C9H11N2O14P3
+M_gdp_c,GDP C10H12N5O11P2
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_gtp_c,GTP C10H12N5O14P3
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_mlthf_c,5,10-Methylenetetrahydrofolate
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_nh4_c,Ammonium
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_r1p_c,Alpha-D-Ribose 1-phosphate
+M_thf_c,5,6,7,8-Tetrahydrofolate
+M_thym_c,Thymine C5H6N2O2
+M_thymd_c,Thymidine C10H14N2O5
+M_trdox_c,Oxidized thioredoxin
+M_trdrd_c,Reduced thioredoxin
+M_udp_c,UDP C9H11N2O12P2
+M_ump_c,UMP C9H11N2O9P
+M_ura_c,Uracil
+M_uri_c,Uridine
+M_utp_c,UTP C9H11N2O15P3
+R_CTPS2,CTP synthase (glutamine),0
+R_CYTD,Cytidine deaminase,0
+R_CYTDK2,Cytidine kinase (GTP),0
+R_CYTK1,Cytidylate kinase (CMP),1
+R_CYTK2,Cytidylate kinase (dCMP),1
+R_DCMPDA,DCMP deaminase,1
+R_DTMPK,DTMP kinase,1
+R_DURIK1,Deoxyuridine kinase (ATP:Deoxyuridine),0
+R_DUTPDP,DUTP diphosphatase,0
+R_NDPK2,Nucleoside-diphosphate kinase (ATP:UDP),1
+R_NDPK4,Nucleoside-diphosphate kinase (ATP:dTDP),1
+R_NDPK7,Nucleoside-diphosphate kinase (ATP:dCDP),1
+R_NTD1,5-nucleotidase (dUMP),0
+R_NTD2,5-nucleotidase (UMP),0
+R_NTD3,5-nucleotidase (dCMP),0
+R_NTD4,5-nucleotidase (CMP),0
+R_NTD5,5-nucleotidase (dTMP),0
+R_NTPP3,Nucleoside triphosphate pyrophosphorylase (dctp),0
+R_NTPP4,Nucleoside triphosphate pyrophosphorylase (ctp),0
+R_NTPP7,Nucleoside triphosphate pyrophosphorylase (dttp),0
+R_NTPP8,Nucleoside triphosphate pyrophosphorylase (utp),0
+R_PYNP1,Pyrimidine-nucleoside phosphorylase (cytosine),0
+R_RNTR3,Ribonucleoside triphosphate reductase  CTP ,0
+R_RNTR4,Ribonucleoside triphosphate reductase  UTP ,0
+R_TMDK1,Thymidine kinase (ATP:thymidine),0
+R_TMDPP,Thymidine phosphorylase,1
+R_TMDS3,Thymidylate synthase (FAD dependent),0
+R_UPPRT,Uracil phosphoribosyltransferase,0
+R_URIDK2r,Uridylate kinase (dUMP),1
+R_URIK1,Uridine kinase  ATPUridine ,0
+R_URIK2,Uridine kinase (GTP:Uridine),0
+#R_CTPS2,M_atp_c,M_gln__L_c,M_h2o_c,M_utp_c,-,M_adp_c,M_ctp_c,M_glu__L_c,M_h_c,M_pi_c
+#R_CYTD,M_cytd_c,M_h2o_c,M_h_c,-,M_nh4_c,M_uri_c
+#R_CYTDK2,M_cytd_c,M_gtp_c,-,M_cmp_c,M_gdp_c,M_h_c
+#R_CYTK1,M_atp_c,M_cmp_c,-,M_adp_c,M_cdp_c
+#R_CYTK2,M_atp_c,M_dcmp_c,-,M_adp_c,M_dcdp_c
+#R_DCMPDA,M_dcmp_c,M_h2o_c,M_h_c,-,M_dump_c,M_nh4_c
+#R_DTMPK,M_atp_c,M_dtmp_c,-,M_adp_c,M_dtdp_c
+#R_DURIK1,M_atp_c,M_duri_c,-,M_adp_c,M_dump_c,M_h_c
+#R_DUTPDP,M_dutp_c,M_h2o_c,-,M_dump_c,M_h_c,M_ppi_c
+#R_NDPK2,M_atp_c,M_udp_c,-,M_adp_c,M_utp_c
+#R_NDPK4,M_atp_c,M_dtdp_c,-,M_adp_c,M_dttp_c
+#R_NDPK7,M_atp_c,M_dcdp_c,-,M_adp_c,M_dctp_c
+#R_NTD1,M_dump_c,M_h2o_c,-,M_duri_c,M_pi_c
+#R_NTD2,M_h2o_c,M_ump_c,-,M_pi_c,M_uri_c
+#R_NTD3,M_dcmp_c,M_h2o_c,-,M_dcyt_c,M_pi_c
+#R_NTD4,M_cmp_c,M_h2o_c,-,M_cytd_c,M_pi_c
+#R_NTD5,M_dtmp_c,M_h2o_c,-,M_pi_c,M_thymd_c
+#R_NTPP3,M_dctp_c,M_h2o_c,-,M_dcmp_c,M_h_c,M_ppi_c
+#R_NTPP4,M_ctp_c,M_h2o_c,-,M_cmp_c,M_h_c,M_ppi_c
+#R_NTPP7,M_dttp_c,M_h2o_c,-,M_dtmp_c,M_h_c,M_ppi_c
+#R_NTPP8,M_h2o_c,M_utp_c,-,M_h_c,M_ppi_c,M_ump_c
+#R_PYNP1,M_csn_c,M_r1p_c,-,M_cytd_c,M_pi_c
+#R_RNTR3,M_ctp_c,M_trdrd_c,-,M_dctp_c,M_h2o_c,M_trdox_c
+#R_RNTR4,M_trdrd_c,M_utp_c,-,M_dutp_c,M_h2o_c,M_trdox_c
+#R_TMDK1,M_atp_c,M_thymd_c,-,M_adp_c,M_dtmp_c,M_h_c
+#R_TMDPP,M_pi_c,M_thymd_c,-,M_2dr1p_c,M_thym_c
+#R_TMDS3,M_dump_c,M_h_c,M_mlthf_c,M_nadph_c,-,M_dtmp_c,M_nadp_c,M_thf_c
+#R_UPPRT,M_prpp_c,M_ura_c,-,M_ppi_c,M_ump_c
+#R_URIDK2r,M_atp_c,M_dump_c,-,M_adp_c,M_dudp_c
+#R_URIK1,M_atp_c,M_uri_c,-,M_adp_c,M_h_c,M_ump_c
+#R_URIK2,M_gtp_c,M_uri_c,-,M_gdp_c,M_h_c,M_ump_c
+##Glucuronate Metabolism
+M_2ddg6p_c,2-Dehydro-3-deoxy-D-gluconate 6-phosphate
+M_2ddglcn_c,2-Dehydro-3-deoxy-D-gluconate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_fruur_c,D-Fructuronate
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_glcur_c,D-Glucuronate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_mana_c,D-Mannonate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_pyr_c,Pyruvate
+R_DDGLK,2-dehydro-3-deoxygluconokinase,1
+R_EDA,2-dehydro-3-deoxy-phosphogluconate aldolase,1
+R_GUI1,Glucuronate isomerase (D-glucuronate),1
+R_MANAO,Mannonate oxidoreductase,1
+R_MNNH,D-mannonate hydrolyase,1
+#R_DDGLK,M_2ddglcn_c,M_atp_c,-,M_2ddg6p_c,M_adp_c,M_h_c
+#R_EDA,M_2ddg6p_c,-,M_g3p_c,M_pyr_c
+#R_GUI1,M_glcur_c,-,M_fruur_c
+#R_MANAO,M_mana_c,M_nad_c,-,M_fruur_c,M_h_c,M_nadh_c
+#R_MNNH,M_mana_c,-,M_2ddglcn_c,M_h2o_c
+##Arginine Biosynthesis
+M_accoa_c,Acetyl-CoA
+M_acg5p_c,N-Acetyl-L-glutamyl 5-phosphate
+M_acg5sa_c,N-Acetyl-L-glutamate 5-semialdehyde
+M_acglu_c,N-Acetyl-L-glutamate
+M_acorn_c,N2-Acetyl-L-ornithine
+M_adp_c,ADP C10H12N5O10P2
+M_akg_c,2-Oxoglutarate
+M_amp_c,AMP C10H12N5O7P
+M_arg__L_c,L-Arginine
+M_argsuc_c,N(omega)-(L-Arginino)succinate
+M_asp__L_c,L-Aspartate
+M_atp_c,ATP C10H12N5O13P3
+M_cbp_c,Carbamoyl phosphate
+M_citr__L_c,L-Citrulline
+M_coa_c,Coenzyme A
+M_fum_c,Fumarate
+M_glu__L_c,L-Glutamate
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_orn_c,Ornithine
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+R_ACGK,Acetylglutamate kinase,0
+R_ACGS,N-acetylglutamate synthase,0
+R_ACOTA,Acetylornithine transaminase,1
+R_AGPR,N-acetyl-g-glutamyl-phosphate reductase,1
+R_ARGSL,Argininosuccinate lyase,1
+R_ARGSS,Argininosuccinate synthase,1
+R_OCBT,Ornithine carbamoyltransferase,1
+R_ORNTAC,Ornithine transacetylase,1
+#R_ACGK,M_acglu_c,M_atp_c,-,M_acg5p_c,M_adp_c
+#R_ACGS,M_accoa_c,M_glu__L_c,-,M_acglu_c,M_coa_c,M_h_c
+#R_ACOTA,M_acorn_c,M_akg_c,-,M_acg5sa_c,M_glu__L_c
+#R_AGPR,M_acg5sa_c,M_nadp_c,M_pi_c,-,M_acg5p_c,M_h_c,M_nadph_c
+#R_ARGSL,M_argsuc_c,-,M_arg__L_c,M_fum_c
+#R_ARGSS,M_asp__L_c,M_atp_c,M_citr__L_c,-,M_amp_c,M_argsuc_c,M_h_c,M_ppi_c
+#R_OCBT,M_cbp_c,M_orn_c,-,M_citr__L_c,M_h_c,M_pi_c
+#R_ORNTAC,M_acorn_c,M_glu__L_c,-,M_acglu_c,M_orn_c
+##Entner-Doudoroff pathway
+M_4h2oglt_c,4 Hydroxy 2 oxoglutarate C5H4O6
+M_6pgc_c,6-Phospho-D-gluconate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_glcn_c,D-Gluconate
+M_glx_c,Glyoxylate
+M_h_c,H+
+M_pyr_c,Pyruvate
+R_DDPGA,2-dehydro-3-deoxy-phosphogluconate aldolase,1
+R_GNK,Gluconokinase,0
+#R_DDPGA,M_4h2oglt_c,-,M_glx_c,M_pyr_c
+#R_GNK,M_atp_c,M_glcn_c,-,M_6pgc_c,M_adp_c,M_h_c
+##Pantothenate and CoA Metabolism
+M_2dhp_c,2-Dehydropantoate
+M_3mob_c,3-Methyl-2-oxobutanoate
+M_4ppan_c,D-4-Phosphopantothenate
+M_4ppcys_c,N-((R)-4-Phosphopantothenoyl)-L-cysteine
+M_adp_c,ADP C10H12N5O10P2
+M_ala_B_c,Beta-Alanine
+M_amp_c,AMP C10H12N5O7P
+M_atp_c,ATP C10H12N5O13P3
+M_cmp_c,CMP C9H12N3O8P
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_ctp_c,CTP C9H12N3O14P3
+M_cys__L_c,L-Cysteine
+M_dpcoa_c,Dephospho-CoA
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_mlthf_c,5,10-Methylenetetrahydrofolate
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_pan4p_c,Pantetheine 4-phosphate
+M_pant__R_c,(R)-Pantoate
+M_pnto__R_c,(R)-Pantothenate
+M_ppi_c,Diphosphate
+M_thf_c,5,6,7,8-Tetrahydrofolate
+R_DPCOAK,Dephospho-CoA kinase,0
+R_DPR,2-dehydropantoate 2-reductase,0
+R_MOHMT,3-methyl-2-oxobutanoate hydroxymethyltransferase,0
+R_PANTS,Pantothenate synthase,0
+R_PNTK,Pantothenate kinase,0
+R_PPCDC,Phosphopantothenoylcysteine decarboxylase,0
+R_PPNCL2,Phosphopantothenate-cysteine ligase,0
+R_PTPATi,Pantetheine-phosphate adenylyltransferase,1
+#R_DPCOAK,M_atp_c,M_dpcoa_c,-,M_adp_c,M_coa_c,M_h_c
+#R_DPR,M_2dhp_c,M_h_c,M_nadph_c,-,M_nadp_c,M_pant__R_c
+#R_MOHMT,M_3mob_c,M_h2o_c,M_mlthf_c,-,M_2dhp_c,M_thf_c
+#R_PANTS,M_ala_B_c,M_atp_c,M_pant__R_c,-,M_amp_c,M_h_c,M_pnto__R_c,M_ppi_c
+#R_PNTK,M_atp_c,M_pnto__R_c,-,M_4ppan_c,M_adp_c,M_h_c
+#R_PPCDC,M_4ppcys_c,M_h_c,-,M_co2_c,M_pan4p_c
+#R_PPNCL2,M_4ppan_c,M_ctp_c,M_cys__L_c,-,M_4ppcys_c,M_cmp_c,M_h_c,M_ppi_c
+#R_PTPATi,M_atp_c,M_h_c,M_pan4p_c,-,M_dpcoa_c,M_ppi_c
+##Ribose Metabolism
+M_2dr5p_c,2-Deoxy-D-ribose 5-phosphate
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_drib_c,Deoxyribose C5H10O4
+M_h_c,H+
+M_r5p_c,Alpha-D-Ribose 5-phosphate
+M_rib__D_c,D-Ribose
+R_DRBK,Deoxyribokinase,1
+R_RBK,Ribokinase,1
+#R_DRBK,M_atp_c,M_drib_c,-,M_2dr5p_c,M_adp_c,M_h_c
+#R_RBK,M_atp_c,M_rib__D_c,-,M_adp_c,M_h_c,M_r5p_c
+##Proline Biosynthesis
+M_1p3h5c_c,L 1 Pyrroline 3 hydroxy 5 carboxylate C5H6NO3
+M_1pyr5c_c,1-Pyrroline-5-carboxylate
+M_4h2oglt_c,4 Hydroxy 2 oxoglutarate C5H4O6
+M_4hpro_LT_c,Trans 4 Hydroxy L proline C5H9NO3
+M_adp_c,ADP C10H12N5O10P2
+M_akg_c,2-Oxoglutarate
+M_atp_c,ATP C10H12N5O13P3
+M_e4hglu_c,L erythro 4 Hydroxyglutamate C5H8NO5
+M_glu5p_c,L-Glutamate 5-phosphate
+M_glu5sa_c,L-Glutamate 5-semialdehyde
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_orn_c,Ornithine
+M_pi_c,Phosphate
+M_pro__L_c,L-Proline
+R_EHGLAT,L erythro 4 Hydroxyglutamate2 oxoglutarate aminotransferase,0
+R_G5SADs,L-glutamate 5-semialdehyde dehydratase (spontaneous),1
+R_G5SD,Glutamate-5-semialdehyde dehydrogenase,0
+R_GLU5K,Glutamate 5-kinase,0
+R_HPROb,L hydroxyproline reductase  NADP ,0
+R_ORNTA,Ornithine transaminase,0
+R_P5CR,Pyrroline-5-carboxylate reductase,1
+#R_EHGLAT,M_akg_c,M_e4hglu_c,-,M_4h2oglt_c,M_glu__L_c
+#R_G5SADs,M_glu5sa_c,-,M_1pyr5c_c,M_h2o_c,M_h_c
+#R_G5SD,M_glu5p_c,M_h_c,M_nadph_c,-,M_glu5sa_c,M_nadp_c,M_pi_c
+#R_GLU5K,M_atp_c,M_glu__L_c,-,M_adp_c,M_glu5p_c
+#R_HPROb,M_1p3h5c_c,M_h_c,M_nadph_c,-,M_4hpro_LT_c,M_nadp_c
+#R_ORNTA,M_akg_c,M_orn_c,-,M_glu5sa_c,M_glu__L_c
+#R_P5CR,M_1pyr5c_c,M_h_c,M_nadph_c,-,M_nadp_c,M_pro__L_c
+##Glycolysis/Gluconeogenesis
+M_13dpg_c,3-Phospho-D-glyceroyl phosphate
+M_2pg_c,D-Glycerate 2-phosphate
+M_3pg_c,3-Phospho-D-glycerate
+M_adp_c,ADP C10H12N5O10P2
+M_amp_c,AMP C10H12N5O7P
+M_atp_c,ATP C10H12N5O13P3
+M_dhap_c,Dihydroxyacetone phosphate
+M_f6p_c,D-Fructose 6-phosphate
+M_fdp_c,D-Fructose 1,6-bisphosphate
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_g6p_c,D-Glucose 6-phosphate
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_pep_c,Phosphoenolpyruvate
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_pyr_c,Pyruvate
+R_ENO,Enolase,1
+R_FBA,Fructose-bisphosphate aldolase,1
+R_FBP,Fructose-bisphosphatase,0
+R_GAPD,Glyceraldehyde-3-phosphate dehydrogenase,1
+R_HEX1,Hexokinase (D-glucose:ATP),0
+R_PFK,Phosphofructokinase,0
+R_PFK_ppi,Phosphofructokinase (ppi-dependent,0
+R_PGI,Glucose-6-phosphate isomerase,1
+R_PGK,Phosphoglycerate kinase,1
+R_PGM,Phosphoglycerate mutase,1
+R_PPDK,Pyruvate,phosphate dikinase.,0
+R_PYK,Pyruvate kinase,0
+R_TPI,Triose-phosphate isomerase,1
+#R_ENO,M_2pg_c,-,M_h2o_c,M_pep_c
+#R_FBA,M_fdp_c,-,M_dhap_c,M_g3p_c
+#R_FBP,M_fdp_c,M_h2o_c,-,M_f6p_c,M_pi_c
+#R_GAPD,M_g3p_c,M_nad_c,M_pi_c,-,M_13dpg_c,M_h_c,M_nadh_c
+#R_HEX1,M_atp_c,M_glc__D_c,-,M_adp_c,M_g6p_c,M_h_c
+#R_PFK,M_atp_c,M_f6p_c,-,M_adp_c,M_fdp_c,M_h_c
+#R_PFK_ppi,M_f6p_c,M_ppi_c,-,M_fdp_c,M_h_c,M_pi_c
+#R_PGI,M_g6p_c,-,M_f6p_c
+#R_PGK,M_3pg_c,M_atp_c,-,M_13dpg_c,M_adp_c
+#R_PGM,M_2pg_c,-,M_3pg_c
+#R_PPDK,M_atp_c,M_pi_c,M_pyr_c,-,M_amp_c,M_h_c,M_pep_c,M_ppi_c
+#R_PYK,M_adp_c,M_h_c,M_pep_c,-,M_atp_c,M_pyr_c
+#R_TPI,M_dhap_c,-,M_g3p_c
+##Pentose Phosphate Pathway
+M_6pgc_c,6-Phospho-D-gluconate
+M_6pgl_c,6-phospho-D-glucono-1,5-lactone
+M_co2_c,CO2 CO2
+M_e4p_c,D-Erythrose 4-phosphate
+M_f6p_c,D-Fructose 6-phosphate
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_g6p_c,D-Glucose 6-phosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_r5p_c,Alpha-D-Ribose 5-phosphate
+M_ru5p__D_c,D-Ribulose 5-phosphate
+M_s7p_c,Sedoheptulose 7-phosphate
+M_xu5p__D_c,D-Xylulose 5-phosphate
+R_G6PDH2r,Glucose 6-phosphate dehydrogenase,0
+R_GND,Phosphogluconate dehydrogenase,0
+R_PGL,6-phosphogluconolactonase,0
+R_RPE,Ribulose 5-phosphate 3-epimerase,1
+R_RPI,Ribose-5-phosphate isomerase,1
+R_TALA,Transaldolase,1
+R_TKT1,Transketolase,1
+R_TKT2,Transketolase,1
+#R_G6PDH2r,M_g6p_c,M_nadp_c,-,M_6pgl_c,M_h_c,M_nadph_c
+#R_GND,M_6pgc_c,M_nadp_c,-,M_co2_c,M_nadph_c,M_ru5p__D_c
+#R_PGL,M_6pgl_c,M_h2o_c,-,M_6pgc_c,M_h_c
+#R_RPE,M_ru5p__D_c,-,M_xu5p__D_c
+#R_RPI,M_r5p_c,-,M_ru5p__D_c
+#R_TALA,M_g3p_c,M_s7p_c,-,M_e4p_c,M_f6p_c
+#R_TKT1,M_r5p_c,M_xu5p__D_c,-,M_g3p_c,M_s7p_c
+#R_TKT2,M_e4p_c,M_xu5p__D_c,-,M_f6p_c,M_g3p_c
+##Galactose metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_g1p_c,D-Glucose 1-phosphate
+M_gal1p_c,Alpha-D-Galactose 1-phosphate
+M_gal_c,D-Galactose
+M_glcur_c,D-Glucuronate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_ppi_c,Diphosphate
+M_trp__L_c,L-Tryptophan
+M_trpglcur_c,Tryptophanyl-beta-D-glucuronide
+M_udp_c,UDP C9H11N2O12P2
+M_udpg_c,UDPglucose
+M_udpgal_c,UDPgalactose
+M_udpglcur_c,UDP-D-glucuronate
+M_utp_c,UTP C9H11N2O15P3
+R_GALKr,Galactokinase,0
+R_GALT,Galactose 1 phosphate uridylyltransferase,1
+R_GALUi,UTP-glucose-1-phosphate uridylyltransferase (irreversible),1
+R_GLCAASE3,Beta-glucuronidase (tryptophanyl),0
+R_GLCURT,Glucuronosyltransferase (tryptophanyl),1
+R_UDPG4E,UDPglucose 4-epimerase,1
+R_UDPGD,UDPglucose 6-dehydrogenase,0
+#R_GALKr,M_atp_c,M_gal_c,-,M_adp_c,M_gal1p_c,M_h_c
+#R_GALT,M_gal1p_c,M_h_c,M_utp_c,-,M_ppi_c,M_udpgal_c
+#R_GALUi,M_g1p_c,M_h_c,M_utp_c,-,M_ppi_c,M_udpg_c
+#R_GLCAASE3,M_h2o_c,M_trpglcur_c,-,M_glcur_c,M_h_c,M_trp__L_c
+#R_GLCURT,M_trp__L_c,M_udpglcur_c,-,M_trpglcur_c,M_udp_c
+#R_UDPG4E,M_udpg_c,-,M_udpgal_c
+#R_UDPGD,M_h2o_c,M_nad_c,M_udpg_c,-,M_h_c,M_nadh_c,M_udpglcur_c
+##Mannan Metabolism
+M_gal_c,D-Galactose
+M_galman4_c,Galactomannan(n=4 repeat units mannose, alpha-1,4 man)
+M_galman6_c,Galactomannan(n=6 repeat units mannose, alpha-1,4 man)
+M_glc__D_c,D-Glucose
+M_glcman4_c,Glucomannan (n=4 repeat units, glc beta-1,4 man)
+M_glcman6_c,Glucomannan (n=6 repeat units, glc beta-1,4 man)
+M_h2o_c,H2O H2O
+M_man_c,D-Mannose
+M_manb_c,Mannobiose (beta-1,4)
+M_mantr_c,Mannotriose (beta-1,4)
+M_manttr_c,Mannotetraose
+R_GALMAN4,Hydrolysis of galactomannan,0
+R_GALMAN6,Hydrolysis of galactomannan,0
+R_GLCMAN4,Hydrolysis of glucomannan,0
+R_GLCMAN6,Hydrolysis of glucomannan,0
+R_MANA1,Mannase,0
+R_MANA2,Mannase,0
+R_MANA3,Mannase,0
+#R_GALMAN4,M_galman4_c,M_h2o_c,-,M_gal_c,M_man_c
+#R_GALMAN6,M_galman6_c,M_h2o_c,-,M_gal_c,M_man_c
+#R_GLCMAN4,M_glcman4_c,M_h2o_c,-,M_glc__D_c,M_man_c
+#R_GLCMAN6,M_glcman6_c,M_h2o_c,-,M_glc__D_c,M_man_c
+#R_MANA1,M_h2o_c,M_manb_c,-,M_man_c
+#R_MANA2,M_h2o_c,M_mantr_c,-,M_man_c,M_manb_c
+#R_MANA3,M_h2o_c,M_manttr_c,-,M_man_c,M_mantr_c
+##Raffinose Metabolism
+M_fru_c,D-Fructose
+M_gal_c,D-Galactose
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_melib_c,Melibiose C12H22O11
+M_raffin_c,Raffinose C18H32O16
+R_GALS3,A-galactosidase (melibiose),0
+R_RAFH,Raffinose hydrolyzing enzyme,0
+#R_GALS3,M_h2o_c,M_melib_c,-,M_gal_c,M_glc__D_c
+#R_RAFH,M_h2o_c,M_raffin_c,-,M_fru_c,M_melib_c
+##Glycine and Serine Metabolism
+M_3pg_c,3-Phospho-D-glycerate
+M_3php_c,3-Phosphohydroxypyruvate
+M_acald_c,Acetaldehyde
+M_ala__L_c,L-Alanine
+M_gly_c,Glycine
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hpyr_c,Hydroxypyruvate
+M_mlthf_c,5,10-Methylenetetrahydrofolate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nh4_c,Ammonium
+M_pyr_c,Pyruvate
+M_ser__L_c,L-Serine
+M_thf_c,5,6,7,8-Tetrahydrofolate
+M_thr__L_c,L-Threonine
+R_GHMT2r,Glycine hydroxymethyltransferase, reversible,1
+R_PGCD,Phosphoglycerate dehydrogenase,0
+R_SERD_L,L-serine deaminase,1
+R_SPTc,Serine-pyruvate aminotransferase,1
+R_THRA,Threonine aldolase,1
+#R_GHMT2r,M_ser__L_c,M_thf_c,-,M_gly_c,M_h2o_c,M_mlthf_c
+#R_PGCD,M_3pg_c,M_nad_c,-,M_3php_c,M_h_c,M_nadh_c
+#R_SERD_L,M_ser__L_c,-,M_nh4_c,M_pyr_c
+#R_SPTc,M_pyr_c,M_ser__L_c,-,M_ala__L_c,M_hpyr_c
+#R_THRA,M_thr__L_c,-,M_acald_c,M_gly_c
+##Valine, Leucine, and Isoleucine Metabolism
+M_23dhmb_c,(R)-2,3-Dihydroxy-3-methylbutanoate
+M_23dhmp_c,(R)-2,3-Dihydroxy-3-methylpentanoate
+M_2ahbut_c,(S)-2-Aceto-2-hydroxybutanoate
+M_2ippm_c,2-Isopropylmaleate
+M_2obut_c,2-Oxobutanoate
+M_3c2hmp_c,3-Carboxy-2-hydroxy-4-methylpentanoate
+M_3c3hmp_c,3-Carboxy-3-hydroxy-4-methylpentanoate
+M_3c4mop_c,3-Carboxy-4-methyl-2-oxopentanoate
+M_3mob_c,3-Methyl-2-oxobutanoate
+M_3mop_c,(S)-3-Methyl-2-oxopentanoate
+M_4mop_c,4-Methyl-2-oxopentanoate
+M_accoa_c,Acetyl-CoA
+M_adp_c,ADP C10H12N5O10P2
+M_akg_c,2-Oxoglutarate
+M_alac__S_c,(S)-2-Acetolactate
+M_atp_c,ATP C10H12N5O13P3
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hco3_c,Bicarbonate
+M_ile__L_c,L-Isoleucine
+M_leu__L_c,L-Leucine
+M_mmcoa__S_c,(S)-Methylmalonyl-CoA
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_pi_c,Phosphate
+M_ppcoa_c,Propanoyl-CoA
+M_pyr_c,Pyruvate
+M_val__L_c,L-Valine
+R_ACHBS,2-aceto-2-hydroxybutanoate synthase,0
+R_ACLS,Acetolactate synthase,0
+R_DHAD1,Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate),0
+R_DHAD2,Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate),0
+R_ILETA,Isoleucine transaminase,1
+R_IPMD,3-isopropylmalate dehydrogenase,1
+R_IPPMIa,3-isopropylmalate dehydratase,1
+R_IPPMIb,2-isopropylmalate hydratase,1
+R_IPPS,2-isopropylmalate synthase,0
+R_KARA1,Ketol-acid reductoisomerase (2,3-dihydroxy-3-methylbutanoate),1
+R_KARA2,Ketol-acid reductoisomerase (2-Acetolactate),1
+R_LEUTA,Leucine transaminase,1
+R_OMCDC,2-Oxo-4-methyl-3-carboxypentanoate decarboxylation,0
+R_PPCOAC,Propionyl-CoA carboxylase,0
+R_VALTA,Valine transaminase,1
+#R_ACHBS,M_2obut_c,M_h_c,M_pyr_c,-,M_2ahbut_c,M_co2_c
+#R_ACLS,M_h_c,M_pyr_c,-,M_alac__S_c,M_co2_c
+#R_DHAD1,M_23dhmb_c,-,M_3mob_c,M_h2o_c
+#R_DHAD2,M_23dhmp_c,-,M_3mop_c,M_h2o_c
+#R_ILETA,M_akg_c,M_ile__L_c,-,M_3mop_c,M_glu__L_c
+#R_IPMD,M_3c2hmp_c,M_nad_c,-,M_3c4mop_c,M_h_c,M_nadh_c
+#R_IPPMIa,M_3c2hmp_c,-,M_2ippm_c,M_h2o_c
+#R_IPPMIb,M_2ippm_c,M_h2o_c,-,M_3c3hmp_c
+#R_IPPS,M_3mob_c,M_accoa_c,M_h2o_c,-,M_3c3hmp_c,M_coa_c,M_h_c
+#R_KARA1,M_23dhmb_c,M_nadp_c,-,M_alac__S_c,M_h_c,M_nadph_c
+#R_KARA2,M_2ahbut_c,M_h_c,M_nadph_c,-,M_23dhmp_c,M_nadp_c
+#R_LEUTA,M_akg_c,M_leu__L_c,-,M_4mop_c,M_glu__L_c
+#R_OMCDC,M_3c4mop_c,M_h_c,-,M_4mop_c,M_co2_c
+#R_PPCOAC,M_atp_c,M_hco3_c,M_ppcoa_c,-,M_adp_c,M_h_c,M_mmcoa__S_c,M_pi_c
+#R_VALTA,M_akg_c,M_val__L_c,-,M_3mob_c,M_glu__L_c
+##Glycogene synthesis
+M_adp_c,ADP C10H12N5O10P2
+M_adpglc_c,ADPglucose C16H23N5O15P2
+M_atp_c,ATP C10H12N5O13P3
+M_g1p_c,D-Glucose 1-phosphate
+M_glycogen_c,Glycogen C6H10O5
+M_h_c,H+
+M_ppi_c,Diphosphate
+R_GLCS1,Glycogen synthase (ADPGlc),0
+R_GLGC,Glucose-1-phosphate adenylyltransferase,0
+#R_GLCS1,M_adpglc_c,-,M_adp_c,M_glycogen_c,M_h_c
+#R_GLGC,M_atp_c,M_g1p_c,M_h_c,-,M_adpglc_c,M_ppi_c
+##Xylan Metabolism
+M_glcur_c,D-Glucuronate
+M_h2o_c,H2O H2O
+M_h2o_e,H2O H2O
+M_xyl3_c,Xylotriose
+M_xyl4_c,Xylotetraose
+M_xyl__D_c,D-Xylose
+M_xylan12_e,Xylan (12 backbone units, 3 glcur side chain)
+M_xylan4_c,Xylan (4 backbone units, 1 glcur side chain)
+M_xylan4_e,Xylan (4 backbone units, 1 glcur side chain)
+M_xylan8_e,Xylan (8 backbone units, 2 glcur side chain)
+M_xylb_c,Xylobiose
+M_xylu__D_c,D-Xylulose
+R_GLCURS1,Alpha-glucuronidase, de-branching xylan,1
+R_XYL2e,Xylanase (endo-acting) (extracellular),0
+R_XYLI1,Xylose isomerase,1
+R_XYLOS1,Exo-xylosidase,1
+R_XYLOS2,Exo-xylosidase,1
+R_XYLOS3,Exo-xylosidase,1
+R_XYLe,Xylanase (endo-acting) (extracellular),0
+#R_GLCURS1,M_h2o_c,M_xylan4_c,-,M_glcur_c,M_xyl4_c
+#R_XYL2e,M_h2o_e,M_xylan12_e,-,M_xylan4_e,M_xylan8_e
+#R_XYLI1,M_xyl__D_c,-,M_xylu__D_c
+#R_XYLOS1,M_h2o_c,M_xyl4_c,-,M_xyl__D_c
+#R_XYLOS2,M_h2o_c,M_xyl3_c,-,M_xyl__D_c
+#R_XYLOS3,M_h2o_c,M_xylb_c,-,M_xyl__D_c
+#R_XYLe,M_h2o_e,M_xylan8_e,-,M_xylan4_e
+##Glucan Metabolism
+M_glc__D_c,D-Glucose
+M_glucan1500_e,Beta-1,3/1,4-glucan (Barley, n=1500, Glc beta1->3,4 Glc)
+M_glucan4_c,Beta-1,3/1,4-glucan (Barley, n=4, Glc beta1->3,4 Glc)
+M_glucan4_e,Beta-1,3/1,4-glucan (Barley, n=4, Glc beta1->3,4 Glc)
+M_glucan6_c,Beta-1,3/1,4-glucan (Barley, n=6, Glc beta1->3,4 Glc)
+M_glucan6_e,Beta-1,3/1,4-glucan (Barley, n=6, Glc beta1->3,4 Glc)
+M_h2o_c,H2O H2O
+M_h2o_e,H2O H2O
+R_GLS,Glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase,0
+R_GLS2,Glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase,0
+R_GLS2e,Glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase,0
+R_GLS3e,Glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase,0
+R_GLSe,Glucan hydrolysis by beta-1,4- and beta-1,3 glucosidase,0
+#R_GLS,M_glucan4_c,M_h2o_c,-,M_glc__D_c
+#R_GLS2,M_glucan6_c,M_h2o_c,-,M_glc__D_c
+#R_GLS2e,M_glucan1500_e,M_h2o_e,-,M_glucan6_e
+#R_GLS3e,M_glucan1500_e,M_h2o_e,-,M_glucan4_e,M_glucan6_e
+#R_GLSe,M_glucan1500_e,M_h2o_e,-,M_glucan4_e
+##Glutamate and glutamin metabolism
+M_glu__D_c,D-Glutamate
+M_glu__L_c,L-Glutamate
+R_GLUR,Glutamate racemase,1
+#R_GLUR,M_glu__D_c,-,M_glu__L_c
+##Glycogen Metabolism
+M_glc__D_e,D-Glucose
+M_glycogen1500_e,Glycogen (n=1500 repeat units) (glc alpha 1,4/6 glc)
+M_h2o_e,H2O H2O
+M_malt_e,Maltose C12H22O11
+R_GLYCOe,Glycogen hydrolysis by samylases,0
+#R_GLYCOe,M_glycogen1500_e,M_h2o_e,-,M_glc__D_e,M_malt_e
+##Serine Metabolism
+M_glyc__R_c,(R)-Glycerate
+M_h_c,H+
+M_hpyr_c,Hydroxypyruvate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+R_HPYRRx,Hydroxypyruvate reductase (NADH),1
+#R_HPYRRx,M_h_c,M_hpyr_c,M_nadh_c,-,M_glyc__R_c,M_nad_c
+##Glycerophospholipid Metabolism
+M_chol_c,Choline C5H14NO
+M_etha_c,Ethanolamine
+M_g3pc_c,Sn-Glycero-3-phosphocholine
+M_g3pe_c,Sn-Glycero-3-phosphoethanolamine
+M_glyc3p_c,Glycerol 3-phosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+R_GPDDA1,Glycerophosphodiester phosphodiesterase (Glycerophosphocholine),0
+R_GPDDA2,Glycerophosphodiester phosphodiesterase (Glycerophosphoethanolamine),0
+#R_GPDDA1,M_g3pc_c,M_h2o_c,-,M_chol_c,M_glyc3p_c,M_h_c
+#R_GPDDA2,M_g3pe_c,M_h2o_c,-,M_etha_c,M_glyc3p_c,M_h_c
+##Pentose and Glucuronate Interconversions
+M_galur_c,D-Galacturonate
+M_tagur_c,D-Tagaturonate
+R_GUI2,Glucuronate isomerase (D-galacturonate),1
+#R_GUI2,M_galur_c,-,M_tagur_c
+##Inositol Metabolism
+M_cdp_inost_c,CDP-Inositol
+M_cmp_c,CMP C9H12N3O8P
+M_ctp_c,CTP C9H12N3O14P3
+M_dip_d_d_c,Di-myo-inositol 1,1 phosphate
+M_g6p_c,D-Glucose 6-phosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_mi1p__L_c,L-myo-Inositol 1-phosphate
+M_pdip_d_d_c,Phospho-di-myo-inositol 1,1 phosphate
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+R_IMP,Myo-inositol 1-phosphatase,0
+R_IMPCT2,CTP:Inositol-1-phosphate cytidylyltransferase,0
+R_MI1PS2,Myo-Inositol-1-phosphate synthase,0
+R_PDIPS,Phospho-di-inositol-1-phosphate synthase,0
+#R_IMP,M_h2o_c,M_pdip_d_d_c,-,M_dip_d_d_c,M_pi_c
+#R_IMPCT2,M_ctp_c,M_h_c,M_mi1p__L_c,-,M_cdp_inost_c,M_ppi_c
+#R_MI1PS2,M_g6p_c,-,M_mi1p__L_c
+#R_PDIPS,M_cdp_inost_c,M_mi1p__L_c,-,M_cmp_c,M_h_c,M_pdip_d_d_c
+##Rhamnose Metabolism
+M_adp_c,ADP C10H12N5O10P2
+M_atp_c,ATP C10H12N5O13P3
+M_dhap_c,Dihydroxyacetone phosphate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_lac__L_c,L-Lactate
+M_lald__L_c,L-Lactaldehyde
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_rml1p_c,L-Rhamnulose 1-phosphate
+M_rml_c,L-Rhamnulose
+M_rmn_c,L-Rhamnose
+R_LCADi,Lactaldehyde dehydrogenase,1
+R_RMI,L-rhamnose isomerase,1
+R_RMK,Rhamnulokinase,0
+R_RMPA,Rhamnulose-1-phosphate aldolase,1
+#R_LCADi,M_h2o_c,M_lald__L_c,M_nad_c,-,M_h_c,M_lac__L_c,M_nadh_c
+#R_RMI,M_rmn_c,-,M_rml_c
+#R_RMK,M_atp_c,M_rml_c,-,M_adp_c,M_h_c,M_rml1p_c
+#R_RMPA,M_rml1p_c,-,M_dhap_c,M_lald__L_c
+##Citric Acid Cycle
+M_accoa_c,Acetyl-CoA
+M_adp_c,ADP C10H12N5O10P2
+M_akg_c,2-Oxoglutarate
+M_atp_c,ATP C10H12N5O13P3
+M_cit_c,Citrate
+M_co2_c,CO2 CO2
+M_coa_c,Coenzyme A
+M_fad_c,Flavin adenine dinucleotide oxidized
+M_fadh2_c,Flavin adenine dinucleotide reduced
+M_fdxo_42_c,Ferredoxin (oxidized form 4:2)
+M_fdxr_42_c,Ferredoxin (reduced form 4:2)
+M_fum_c,Fumarate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_icit_c,Isocitrate
+M_mal__L_c,L-Malate
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nadp_c,Nicotinamide adenine dinucleotide phosphate
+M_nadph_c,Nicotinamide adenine dinucleotide phosphate - reduced
+M_oaa_c,Oxaloacetate
+M_pi_c,Phosphate
+M_succ_c,Succinate
+M_succoa_c,Succinyl-CoA
+R_ACONT,Aconitate hydratase,1
+R_CS,Citrate synthase,0
+R_FUM,Fumarase,1
+R_ICDHyr,Isocitrate dehydrogenase (NADP),1
+R_MDH,Malate dehydrogenase,1
+R_OOR2r,2-ketoglutarate ferredoxin oxidoreductase,0
+R_SUCD1,Succinate dehydrogenase,1
+R_SUCOAS,Succinyl-CoA synthetase (ADP-forming),1
+#R_ACONT,M_cit_c,-,M_icit_c
+#R_CS,M_accoa_c,M_h2o_c,M_oaa_c,-,M_cit_c,M_coa_c,M_h_c
+#R_FUM,M_fum_c,M_h2o_c,-,M_mal__L_c
+#R_ICDHyr,M_icit_c,M_nadp_c,-,M_akg_c,M_co2_c,M_nadph_c
+#R_MDH,M_mal__L_c,M_nad_c,-,M_h_c,M_nadh_c,M_oaa_c
+#R_OOR2r,M_akg_c,M_coa_c,M_fdxo_42_c,-,M_co2_c,M_fdxr_42_c,M_h_c,M_succoa_c
+#R_SUCD1,M_fad_c,M_succ_c,-,M_fadh2_c,M_fum_c
+#R_SUCOAS,M_atp_c,M_coa_c,M_succ_c,-,M_adp_c,M_pi_c,M_succoa_c
+##Laminarine Metabolism
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_h2o_e,H2O H2O
+M_lmn2_c,Laminaribiose
+M_lmn2_e,Laminaribiose
+M_lmn30_e,Laminarin (n=30 repeat units, beta -1,3 glc)
+R_LMN2,Laminaribiase,0
+R_LMNe,Laminarinase (extracellular),0
+#R_LMN2,M_h2o_c,M_lmn2_c,-,M_glc__D_c
+#R_LMNe,M_h2o_e,M_lmn30_e,-,M_lmn2_e
+##Maltose Metabolism
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_malt_c,Maltose C12H22O11
+M_malttr_c,Maltotriose C18H32O16
+M_maltttr_c,Maltotetraose
+R_MLTG1,Maltodextrin glucosidase (maltotriose),0
+R_MLTG2,Maltodextrin glucosidase (maltotetraose),0
+#R_MLTG1,M_h2o_c,M_malttr_c,-,M_glc__D_c,M_malt_c
+#R_MLTG2,M_h2o_c,M_maltttr_c,-,M_glc__D_c,M_malttr_c
+##Mannitol Metabolism
+M_fru_c,D-Fructose
+M_h_c,H+
+M_man_c,D-Mannose
+M_mnl_c,D-Mannitol
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+R_MNLDH2,Mannitol dehydrogenase (fructose),0
+R_MNLDHr,Mannitol dehydrogenase,1
+#R_MNLDH2,M_mnl_c,M_nad_c,-,M_fru_c,M_h_c,M_nadh_c
+#R_MNLDHr,M_mnl_c,M_nad_c,-,M_h_c,M_man_c,M_nadh_c
+##Spermidine Biosynthesis
+M_5mta_c,5-Methylthioadenosine
+M_ametam_c,S-Adenosylmethioninamine
+M_co2_c,CO2 CO2
+M_h_c,H+
+M_orn_c,Ornithine
+M_ptrc_c,Putrescine
+M_spmd_c,Spermidine
+M_sprm_c,Spermine C10H30N4
+R_ORNDC,Ornithine Decarboxylase,0
+R_SPMS,Spermidine synthase,0
+R_SPRMS,Spermine synthase,0
+#R_ORNDC,M_h_c,M_orn_c,-,M_co2_c,M_ptrc_c
+#R_SPMS,M_ametam_c,M_ptrc_c,-,M_5mta_c,M_h_c,M_spmd_c
+#R_SPRMS,M_ametam_c,M_spmd_c,-,M_5mta_c,M_h_c,M_sprm_c
+##Vitamin B6 Metabolism
+M_g3p_c,Glyceraldehyde 3-phosphate
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_pi_c,Phosphate
+M_pydx5p_c,Pyridoxal 5-phosphate
+M_r5p_c,Alpha-D-Ribose 5-phosphate
+R_PLPS,Pyridoxal-5-phosphate synthase,0
+#R_PLPS,M_g3p_c,M_gln__L_c,M_r5p_c,-,M_glu__L_c,M_h2o_c,M_h_c,M_pi_c,M_pydx5p_c
+##Sucrose Metabolism
+M_fru_c,D-Fructose
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_sucr_c,Sucrose C12H22O11
+R_SUCR,Sucrose hydrolyzing enzyme,0
+#R_SUCR,M_h2o_c,M_sucr_c,-,M_fru_c,M_glc__D_c
+##Glycolipid Synthesis
+M_ACP_c,Acyl carrier protein
+M_TM_GL1_c,Thermotoga maritima glycolipid 1
+M_TM_GL2_c,Thermotoga maritima glycolipid 2
+M_dcaACP_c,Decanoyl-ACP (n-C10:0ACP)
+M_glyc_c,Glycerol
+M_h_c,H+
+M_palmACP_c,Palmitoyl-ACP (n-C16:0ACP)
+M_udp_c,UDP C9H11N2O12P2
+M_udpg_c,UDPglucose
+R_TM_GL1,Thermotoga maritima glycolipid 1 formation,0
+R_TM_GL2,Thermotoga maritima glycolipid 2 formation,0
+#R_TM_GL1,M_dcaACP_c,M_glyc_c,M_palmACP_c,M_udpg_c,-,M_ACP_c,M_TM_GL1_c,M_h_c,M_udp_c
+#R_TM_GL2,M_glyc_c,M_palmACP_c,M_udpg_c,-,M_ACP_c,M_TM_GL2_c,M_h_c,M_udp_c
+##Trehalose Metabolism
+M_glc__D_c,D-Glucose
+M_h2o_c,H2O H2O
+M_tre_c,Trehalose
+R_TREH,Alpha,alpha-trehalase,0
+#R_TREH,M_h2o_c,M_tre_c,-,M_glc__D_c
+##Fructose Metabolism
+M_fru_c,D-Fructose
+M_glc__D_c,D-Glucose
+R_XYLI2,Xylose isomerase,1
+#R_XYLI2,M_glc__D_c,-,M_fru_c
+##Pantothenate and CoA Biosynthesis
+M_ACP_c,Acyl carrier protein
+M_apoACP_c,Apoprotein [acyl carrier protein]
+M_coa_c,Coenzyme A
+M_h_c,H+
+M_pap_c,Adenosine 3,5-bisphosphate
+R_ACPS1,Acyl-carrier protein synthase,0
+#R_ACPS1,M_apoACP_c,M_coa_c,-,M_ACP_c,M_h_c,M_pap_c
+##Transport
+M_ac_c,Acetate
+M_ac_e,Acetate
+M_adp_c,ADP C10H12N5O10P2
+M_ala__L_c,L-Alanine
+M_ala__L_e,L-Alanine
+M_arab__L_c,L-Arabinose
+M_arab__L_e,L-Arabinose
+M_atp_c,ATP C10H12N5O13P3
+M_cell4_c,Cellulose (n=4 repeating units)
+M_cell4_e,Cellulose (n=4 repeating units)
+M_cell6_c,Cellulose (n=6 repeating units)
+M_cell6_e,Cellulose (n=6 repeating units)
+M_cellb_c,Cellobiose
+M_cellb_e,Cellobiose
+M_co2_c,CO2 CO2
+M_co2_e,CO2 CO2
+M_csn_c,Cytosine
+M_csn_e,Cytosine
+M_fe3_c,Iron (Fe3+)
+M_fe3_e,Iron (Fe3+)
+M_fru_c,D-Fructose
+M_fru_e,D-Fructose
+M_gal_c,D-Galactose
+M_gal_e,D-Galactose
+M_galman4_c,Galactomannan(n=4 repeat units mannose, alpha-1,4 man)
+M_galman4_e,Galactomannan(n=4 repeat units mannose, alpha-1,4 man)
+M_galman6_c,Galactomannan(n=6 repeat units mannose, alpha-1,4 man)
+M_galman6_e,Galactomannan(n=6 repeat units mannose, alpha-1,4 man)
+M_glc__D_c,D-Glucose
+M_glc__D_e,D-Glucose
+M_glcman4_c,Glucomannan (n=4 repeat units, glc beta-1,4 man)
+M_glcman4_e,Glucomannan (n=4 repeat units, glc beta-1,4 man)
+M_glcman6_c,Glucomannan (n=6 repeat units, glc beta-1,4 man)
+M_glcman6_e,Glucomannan (n=6 repeat units, glc beta-1,4 man)
+M_glucan4_c,Beta-1,3/1,4-glucan (Barley, n=4, Glc beta1->3,4 Glc)
+M_glucan4_e,Beta-1,3/1,4-glucan (Barley, n=4, Glc beta1->3,4 Glc)
+M_glucan6_c,Beta-1,3/1,4-glucan (Barley, n=6, Glc beta1->3,4 Glc)
+M_glucan6_e,Beta-1,3/1,4-glucan (Barley, n=6, Glc beta1->3,4 Glc)
+M_glyc3p_c,Glycerol 3-phosphate
+M_glyc3p_e,Glycerol 3-phosphate
+M_glyc_c,Glycerol
+M_glyc_e,Glycerol
+M_h2_c,Hydrogen
+M_h2_e,Hydrogen
+M_h2o_c,H2O H2O
+M_h2o_e,H2O H2O
+M_h2s_c,Hydrogen sulfide
+M_h2s_e,Hydrogen sulfide
+M_h_c,H+
+M_h_e,H+
+M_hco3_c,Bicarbonate
+M_hco3_e,Bicarbonate
+M_ile__L_c,L-Isoleucine
+M_ile__L_e,L-Isoleucine
+M_inost_c,Myo-Inositol
+M_inost_e,Myo-Inositol
+M_k_c,Potassium
+M_k_e,Potassium
+M_lac__L_c,L-Lactate
+M_lac__L_e,L-Lactate
+M_lcts_c,Lactose C12H22O11
+M_lcts_e,Lactose C12H22O11
+M_leu__L_c,L-Leucine
+M_leu__L_e,L-Leucine
+M_lmn2_c,Laminaribiose
+M_lmn2_e,Laminaribiose
+M_malt_c,Maltose C12H22O11
+M_malt_e,Maltose C12H22O11
+M_malttr_c,Maltotriose C18H32O16
+M_malttr_e,Maltotriose C18H32O16
+M_maltttr_c,Maltotetraose
+M_maltttr_e,Maltotetraose
+M_man_c,D-Mannose
+M_man_e,D-Mannose
+M_manb_c,Mannobiose (beta-1,4)
+M_manb_e,Mannobiose (beta-1,4)
+M_mantr_c,Mannotriose (beta-1,4)
+M_mantr_e,Mannotriose (beta-1,4)
+M_manttr_c,Mannotetraose
+M_manttr_e,Mannotetraose
+M_melib_c,Melibiose C12H22O11
+M_melib_e,Melibiose C12H22O11
+M_mg2_c,Magnesium
+M_mg2_e,Magnesium
+M_na1_c,Sodium
+M_na1_e,Sodium
+M_nh4_c,Ammonium
+M_nh4_e,Ammonium
+M_oxa_c,Oxalate
+M_oxa_e,Oxalate
+M_pi_c,Phosphate
+M_pi_e,Phosphate
+M_ppi_c,Diphosphate
+M_ptrc_c,Putrescine
+M_ptrc_e,Putrescine
+M_raffin_c,Raffinose C18H32O16
+M_raffin_e,Raffinose C18H32O16
+M_rib__D_c,D-Ribose
+M_rib__D_e,D-Ribose
+M_rmn_c,L-Rhamnose
+M_rmn_e,L-Rhamnose
+M_s_c,Sulfur
+M_s_e,Sulfur
+M_spmd_c,Spermidine
+M_spmd_e,Spermidine
+M_sucr_c,Sucrose C12H22O11
+M_sucr_e,Sucrose C12H22O11
+M_thr__L_c,L-Threonine
+M_thr__L_e,L-Threonine
+M_tre_c,Trehalose
+M_tre_e,Trehalose
+M_ura_c,Uracil
+M_ura_e,Uracil
+M_val__L_c,L-Valine
+M_val__L_e,L-Valine
+M_xan_c,Xanthine
+M_xan_e,Xanthine
+M_xtsn_c,Xanthosine
+M_xtsn_e,Xanthosine
+M_xyl3_c,Xylotriose
+M_xyl3_e,Xylotriose
+M_xyl__D_c,D-Xylose
+M_xyl__D_e,D-Xylose
+M_xylan4_c,Xylan (4 backbone units, 1 glcur side chain)
+M_xylan4_e,Xylan (4 backbone units, 1 glcur side chain)
+M_xylb_c,Xylobiose
+M_xylb_e,Xylobiose
+M_zn2_c,Zinc
+M_zn2_e,Zinc
+R_ACt2r,Acetate reversible transport via proton symport,1
+R_ALAabc,L-alanine transport via ABC system,0
+R_ARBabc,L-arabinose transport via ABC system,0
+R_CEL6abc,Oligo-cellulose (6) transport via ABC system,0
+R_CELLBabc,Cellobiose transport via ATP transporter,0
+R_CELabc,Oligo-cellulose transport via ABC system,0
+R_CO2t,CO2 transporter via diffusion,1
+R_CSNt2,Cytosine transport in via proton symport,0
+R_FE3abc,Iron (III) transport via ABC system,0
+R_FRUabc,Fructose transport via ATP transporter,0
+R_GALMAN4abc,Galactomannan transport via ABC system,0
+R_GALMAN6abc,Galactomannan transport via ABC system,0
+R_GALabc,D-galactose transport via ABC system,0
+R_GLCMAN4abc,Glucomannan transport via ABC system,0
+R_GLCMAN6abc,Glucomannan transport via ABC system,0
+R_GLCabc,D-glucose transport via ABC system,0
+R_GLUCAN2abc,Glucan transport via ATP transporter,0
+R_GLUCANabc,Glucan transport via ATP transporter,0
+R_GLYC3Pabc,Sn-Glycerol 3-phosphate transport via ABC system,0
+R_GLYCt,Glycerol transport via channel,1
+R_H2Ot,H2O transport via diffusion,1
+R_H2St1,H2s transport (diffusion),1
+R_H2td,Hydrogen transport,1
+R_HCO3abc,Bicarbonate transport via ABC,0
+R_ILEabc,L-isoleucine transport via ABC system,0
+R_INSTabc,Inositol transport in via ABC transport,0
+R_Kt1,Potassium transport via uniport (facilitated diffusion),0
+R_LCTSabc,Lactose transport via ABC system (import),0
+R_LEUabc,L-leucine transport via ABC system,0
+R_LMN2abc,Laminoribiose transport via ABC-transporter,0
+R_L_LACt2r,L lactate reversible transport via proton symport,0
+R_MALTTRabc,Maltotriose transport via ABC system,0
+R_MALTTTRabc,Maltotetraose transport via ABC system,0
+R_MALTabc,Maltose transport via ABC system,0
+R_MANBabc,Mannobiose transport via ABC transporter,0
+R_MANTRabc,Mannotriose transport via ABC transporter,0
+R_MANTTRabc,Mannotetraose transport via ABC transporter,0
+R_MANabc,Mannose transport via ABC transporter,0
+R_MELIBabc,Melibiose transport via ABC system (import),0
+R_MGt5,Magnesium transport in/out via permease (no H+),1
+R_NAt,Sodium transport (uniport),0
+R_NH4t,Ammonia reversible transport,1
+R_OXAt,Oxalate transport in via proton symport,0
+R_PIabc,Phosphate transport via ABC system,0
+R_PIt2r,Phosphate reversible transport via symport,0
+R_PPANA,Inorganic diphosphatase (sodium translocation),0
+R_PTRCabc,Putrescine transport via ABC system,0
+R_RAFFabc,Raffinose transport via ABC system (import),0
+R_RIBabc,D-ribose transport via ABC system,0
+R_RMNabc,L-rhamnose transport (ATP-dependent),0
+R_SPMDabc,Spermidine transport via ABC system,0
+R_SUCRabc,Sucrose transport in via ABC transport,0
+R_St,Sulfur diffusion,1
+R_THRabc,L-threonine transport via ABC system,0
+R_TREabc,Trehalose  transport via ABC system,0
+R_URAt,Uracil transport via facilated diffusion,1
+R_VALabc,L-valine transport via ABC system,0
+R_XANt2,Xanthine transport in via proton symport,0
+R_XTSNt2,Xanthosine transport in via proton symport,1
+R_XYL3abc,Xylotriose ABC transport,0
+R_XYLANabc,Oligo-xylan ABC transport,0
+R_XYLBabc,Xylobiose ABC transport,0
+R_XYLabc,D-xylose transport via ABC system,0
+R_ZNabc,Zinc transport via ABC system,0
+#R_ACt2r,M_ac_e,M_h_e,-,M_ac_c,M_h_c
+#R_ALAabc,M_ala__L_e,M_atp_c,M_h2o_c,-,M_adp_c,M_ala__L_c,M_h_c,M_pi_c
+#R_ARBabc,M_arab__L_e,M_atp_c,M_h2o_c,-,M_adp_c,M_arab__L_c,M_h_c,M_pi_c
+#R_CEL6abc,M_atp_c,M_cell6_e,M_h2o_c,-,M_adp_c,M_cell6_c,M_h_c,M_pi_c
+#R_CELLBabc,M_atp_c,M_cellb_e,M_h2o_c,-,M_adp_c,M_cellb_c,M_h_c,M_pi_c
+#R_CELabc,M_atp_c,M_cell4_e,M_h2o_c,-,M_adp_c,M_cell4_c,M_h_c,M_pi_c
+#R_CO2t,M_co2_e,-,M_co2_c
+#R_CSNt2,M_csn_e,M_h_e,-,M_csn_c,M_h_c
+#R_FE3abc,M_atp_c,M_fe3_e,M_h2o_c,-,M_adp_c,M_fe3_c,M_h_c,M_pi_c
+#R_FRUabc,M_atp_c,M_fru_e,M_h2o_c,-,M_adp_c,M_fru_c,M_h_c,M_pi_c
+#R_GALMAN4abc,M_atp_c,M_galman4_e,M_h2o_c,-,M_adp_c,M_galman4_c,M_h_c,M_pi_c
+#R_GALMAN6abc,M_atp_c,M_galman6_e,M_h2o_c,-,M_adp_c,M_galman6_c,M_h_c,M_pi_c
+#R_GALabc,M_atp_c,M_gal_e,M_h2o_c,-,M_adp_c,M_gal_c,M_h_c,M_pi_c
+#R_GLCMAN4abc,M_atp_c,M_glcman4_e,M_h2o_c,-,M_adp_c,M_glcman4_c,M_h_c,M_pi_c
+#R_GLCMAN6abc,M_atp_c,M_glcman6_e,M_h2o_c,-,M_adp_c,M_glcman6_c,M_h_c,M_pi_c
+#R_GLCabc,M_atp_c,M_glc__D_e,M_h2o_c,-,M_adp_c,M_glc__D_c,M_h_c,M_pi_c
+#R_GLUCAN2abc,M_atp_c,M_glucan6_e,M_h2o_c,-,M_adp_c,M_glucan6_c,M_h_c,M_pi_c
+#R_GLUCANabc,M_atp_c,M_glucan4_e,M_h2o_c,-,M_adp_c,M_glucan4_c,M_h_c,M_pi_c
+#R_GLYC3Pabc,M_atp_c,M_glyc3p_e,M_h2o_c,-,M_adp_c,M_glyc3p_c,M_h_c,M_pi_c
+#R_GLYCt,M_glyc_c,-,M_glyc_e
+#R_H2Ot,M_h2o_e,-,M_h2o_c
+#R_H2St1,M_h2s_c,-,M_h2s_e
+#R_H2td,M_h2_c,-,M_h2_e
+#R_HCO3abc,M_atp_c,M_h2o_c,M_hco3_e,-,M_adp_c,M_h_c,M_hco3_c,M_pi_c
+#R_ILEabc,M_atp_c,M_h2o_c,M_ile__L_e,-,M_adp_c,M_h_c,M_ile__L_c,M_pi_c
+#R_INSTabc,M_atp_c,M_h2o_c,M_inost_e,-,M_adp_c,M_h_c,M_inost_c,M_pi_c
+#R_Kt1,M_k_e,-,M_k_c
+#R_L_LACt2r,M_h_e,M_lac__L_e,-,M_h_c,M_lac__L_c
+#R_LCTSabc,M_atp_c,M_h2o_c,M_lcts_e,-,M_adp_c,M_h_c,M_lcts_c,M_pi_c
+#R_LEUabc,M_atp_c,M_h2o_c,M_leu__L_e,-,M_adp_c,M_h_c,M_leu__L_c,M_pi_c
+#R_LMN2abc,M_atp_c,M_h2o_c,M_lmn2_e,-,M_adp_c,M_h_c,M_lmn2_c,M_pi_c
+#R_MALTTRabc,M_atp_c,M_h2o_c,M_malttr_e,-,M_adp_c,M_h_c,M_malttr_c,M_pi_c
+#R_MALTTTRabc,M_atp_c,M_h2o_c,M_maltttr_e,-,M_adp_c,M_h_c,M_maltttr_c,M_pi_c
+#R_MALTabc,M_atp_c,M_h2o_c,M_malt_e,-,M_adp_c,M_h_c,M_malt_c,M_pi_c
+#R_MANBabc,M_atp_c,M_h2o_c,M_manb_e,-,M_adp_c,M_h_c,M_manb_c,M_pi_c
+#R_MANTRabc,M_atp_c,M_h2o_c,M_mantr_e,-,M_adp_c,M_h_c,M_mantr_c,M_pi_c
+#R_MANTTRabc,M_atp_c,M_h2o_c,M_manttr_e,-,M_adp_c,M_h_c,M_manttr_c,M_pi_c
+#R_MANabc,M_atp_c,M_h2o_c,M_man_e,-,M_adp_c,M_h_c,M_man_c,M_pi_c
+#R_MELIBabc,M_atp_c,M_h2o_c,M_melib_e,-,M_adp_c,M_h_c,M_melib_c,M_pi_c
+#R_MGt5,M_mg2_c,-,M_mg2_e
+#R_NAt,M_na1_e,-,M_na1_c
+#R_NH4t,M_nh4_e,-,M_nh4_c
+#R_OXAt,M_h_e,M_oxa_e,-,M_h_c,M_oxa_c
+#R_PIabc,M_atp_c,M_h2o_c,M_pi_e,-,M_adp_c,M_h_c,M_pi_c
+#R_PIt2r,M_h_e,M_pi_e,-,M_h_c,M_pi_c
+#R_PPANA,M_h2o_c,M_na1_c,M_ppi_c,-,M_h_c,M_na1_e,M_pi_c
+#R_PTRCabc,M_atp_c,M_h2o_c,M_ptrc_e,-,M_adp_c,M_h_c,M_pi_c,M_ptrc_c
+#R_RAFFabc,M_atp_c,M_h2o_c,M_raffin_e,-,M_adp_c,M_h_c,M_pi_c,M_raffin_c
+#R_RIBabc,M_atp_c,M_h2o_c,M_rib__D_e,-,M_adp_c,M_h_c,M_pi_c,M_rib__D_c
+#R_RMNabc,M_atp_c,M_h2o_c,M_rmn_e,-,M_adp_c,M_h_c,M_pi_c,M_rmn_c
+#R_SPMDabc,M_atp_c,M_h2o_c,M_spmd_e,-,M_adp_c,M_h_c,M_pi_c,M_spmd_c
+#R_SUCRabc,M_atp_c,M_h2o_c,M_sucr_e,-,M_adp_c,M_h_c,M_pi_c,M_sucr_c
+#R_St,M_s_e,-,M_s_c
+#R_THRabc,M_atp_c,M_h2o_c,M_thr__L_e,-,M_adp_c,M_h_c,M_pi_c,M_thr__L_c
+#R_TREabc,M_atp_c,M_h2o_c,M_tre_e,-,M_adp_c,M_h_c,M_pi_c,M_tre_c
+#R_URAt,M_ura_e,-,M_ura_c
+#R_VALabc,M_atp_c,M_h2o_c,M_val__L_e,-,M_adp_c,M_h_c,M_pi_c,M_val__L_c
+#R_XANt2,M_h_e,M_xan_e,-,M_h_c,M_xan_c
+#R_XTSNt2,M_h_e,M_xtsn_e,-,M_h_c,M_xtsn_c
+#R_XYL3abc,M_atp_c,M_h2o_c,M_xyl3_e,-,M_adp_c,M_h_c,M_pi_c,M_xyl3_c
+#R_XYLANabc,M_atp_c,M_h2o_c,M_xylan4_e,-,M_adp_c,M_h_c,M_pi_c,M_xylan4_c
+#R_XYLBabc,M_atp_c,M_h2o_c,M_xylb_e,-,M_adp_c,M_h_c,M_pi_c,M_xylb_c
+#R_XYLabc,M_atp_c,M_h2o_c,M_xyl__D_e,-,M_adp_c,M_h_c,M_pi_c,M_xyl__D_c
+#R_ZNabc,M_atp_c,M_h2o_c,M_zn2_e,-,M_adp_c,M_h_c,M_pi_c,M_zn2_c
+##Purine Metabolism
+M_2dr1p_c,2-Deoxy-D-ribose 1-phosphate
+M_ade_c,Adenine
+M_adn_c,Adenosine
+M_adp_c,ADP C10H12N5O10P2
+M_amp_c,AMP C10H12N5O7P
+M_atp_c,ATP C10H12N5O13P3
+M_cdp_c,CDP C9H12N3O11P2
+M_dad_2_c,Deoxyadenosine
+M_dadp_c,DADP C10H12N5O9P2
+M_damp_c,DAMP C10H12N5O6P
+M_datp_c,DATP C10H12N5O12P3
+M_dcdp_c,DCDP C9H12N3O10P2
+M_dgdp_c,DGDP C10H12N5O10P2
+M_dgmp_c,DGMP C10H12N5O7P
+M_dgsn_c,Deoxyguanosine
+M_dgtp_c,DGTP C10H12N5O13P3
+M_dudp_c,DUDP C9H11N2O11P2
+M_gdp_c,GDP C10H12N5O11P2
+M_gln__L_c,L-Glutamine
+M_glu__L_c,L-Glutamate
+M_gmp_c,GMP C10H12N5O8P
+M_gsn_c,Guanosine
+M_gtp_c,GTP C10H12N5O14P3
+M_gua_c,Guanine
+M_h2o_c,H2O H2O
+M_h_c,H+
+M_hxan_c,Hypoxanthine
+M_imp_c,IMP C10H11N4O8P
+M_ins_c,Inosine
+M_nad_c,Nicotinamide adenine dinucleotide
+M_nadh_c,Nicotinamide adenine dinucleotide - reduced
+M_nh4_c,Ammonium
+M_pi_c,Phosphate
+M_ppi_c,Diphosphate
+M_prpp_c,5-Phospho-alpha-D-ribose 1-diphosphate
+M_r1p_c,Alpha-D-Ribose 1-phosphate
+M_trdox_c,Oxidized thioredoxin
+M_trdrd_c,Reduced thioredoxin
+M_udp_c,UDP C9H11N2O12P2
+M_xan_c,Xanthine
+M_xmp_c,Xanthosine 5-phosphate
+M_xtsn_c,Xanthosine
+R_ADA,Adenosine deaminase,0
+R_ADK1,Adenylate kinase,1
+R_ADK3,Adentylate kinase (GTP),1
+R_ADPT,Adenine phosphoribosyltransferase,0
+R_GK1,Guanylate kinase (GMP:ATP),1
+R_GMPS2,GMP synthase,0
+R_GUAPRT,Guanine phosphoribosyltransferase,0
+R_HXPRT,Hypoxanthine phosphoribosyltransferase (Hypoxanthine),0
+R_IMPD,IMP dehydrogenase,0
+R_NDPK5,Nucleoside-diphosphate kinase (ATP:dGDP),1
+R_NDPK8,Nucleoside-diphosphate kinase (ATP:dADP),1
+R_NTD10,5-nucleotidase (XMP),0
+R_NTD11,5-nucleotidase (IMP),0
+R_NTD6,5-nucleotidase (dAMP),0
+R_NTD7,5-nucleotidase (AMP),0
+R_NTD8,5-nucleotidase (dGMP),0
+R_NTD9,5-nucleotidase (GMP),0
+R_NTPP1,Nucleoside triphosphate pyrophosphorylase (dgtp),0
+R_NTPP2,Nucleoside triphosphate pyrophosphorylase (gtp),0
+R_NTPP5,Nucleoside triphosphate pyrophosphorylase (datp),0
+R_NTPP6,Nucleoside triphosphate pyrophosphorylase (atp),0
+R_PUNP1,Purine-nucleoside phosphorylase (Adenosine),1
+R_PUNP2,Purine-nucleoside phosphorylase (Deoxyadenosine),1
+R_PUNP3,Purine-nucleoside phosphorylase (Guanosine),1
+R_PUNP4,Purine-nucleoside phosphorylase (Deoxyguanosine),1
+R_PUNP5,Purine-nucleoside phosphorylase (Inosine),1
+R_RNDR1,Ribonucleoside-diphosphate reductase (ADP),0
+R_RNDR2,Ribonucleoside-diphosphate reductase (GDP),0
+R_RNDR3,Ribonucleoside-diphosphate reductase (CDP),0
+R_RNDR4,Ribonucleoside-diphosphate reductase (UDP),0
+R_RNTR1,Ribonucleoside triphosphate reductase  ATP ,0
+R_RNTR2,Ribonucleoside triphosphate reductase  GTP ,0
+R_XPPT,Xanthine phosphoribosyltransferase,0
+#R_ADA,M_adn_c,M_h2o_c,M_h_c,-,M_ins_c,M_nh4_c
+#R_ADK1,M_amp_c,M_atp_c,-,M_adp_c
+#R_ADK3,M_amp_c,M_gtp_c,-,M_adp_c,M_gdp_c
+#R_ADPT,M_ade_c,M_prpp_c,-,M_amp_c,M_ppi_c
+#R_GK1,M_atp_c,M_gmp_c,-,M_adp_c,M_gdp_c
+#R_GMPS2,M_atp_c,M_gln__L_c,M_h2o_c,M_xmp_c,-,M_amp_c,M_glu__L_c,M_gmp_c,M_h_c,M_ppi_c
+#R_GUAPRT,M_gua_c,M_prpp_c,-,M_gmp_c,M_ppi_c
+#R_HXPRT,M_hxan_c,M_prpp_c,-,M_imp_c,M_ppi_c
+#R_IMPD,M_h2o_c,M_imp_c,M_nad_c,-,M_h_c,M_nadh_c,M_xmp_c
+#R_NDPK5,M_atp_c,M_dgdp_c,-,M_adp_c,M_dgtp_c
+#R_NDPK8,M_atp_c,M_dadp_c,-,M_adp_c,M_datp_c
+#R_NTD10,M_h2o_c,M_xmp_c,-,M_pi_c,M_xtsn_c
+#R_NTD11,M_h2o_c,M_imp_c,-,M_ins_c,M_pi_c
+#R_NTD6,M_damp_c,M_h2o_c,-,M_dad_2_c,M_pi_c
+#R_NTD7,M_amp_c,M_h2o_c,-,M_adn_c,M_pi_c
+#R_NTD8,M_dgmp_c,M_h2o_c,-,M_dgsn_c,M_pi_c
+#R_NTD9,M_gmp_c,M_h2o_c,-,M_gsn_c,M_pi_c
+#R_NTPP1,M_dgtp_c,M_h2o_c,-,M_dgmp_c,M_h_c,M_ppi_c
+#R_NTPP2,M_gtp_c,M_h2o_c,-,M_gmp_c,M_h_c,M_ppi_c
+#R_NTPP5,M_datp_c,M_h2o_c,-,M_damp_c,M_h_c,M_ppi_c
+#R_NTPP6,M_atp_c,M_h2o_c,-,M_amp_c,M_h_c,M_ppi_c
+#R_PUNP1,M_adn_c,M_pi_c,-,M_ade_c,M_r1p_c
+#R_PUNP2,M_dad_2_c,M_pi_c,-,M_2dr1p_c,M_ade_c
+#R_PUNP3,M_gsn_c,M_pi_c,-,M_gua_c,M_r1p_c
+#R_PUNP4,M_dgsn_c,M_pi_c,-,M_2dr1p_c,M_gua_c
+#R_PUNP5,M_ins_c,M_pi_c,-,M_hxan_c,M_r1p_c
+#R_RNDR1,M_adp_c,M_trdrd_c,-,M_dadp_c,M_h2o_c,M_trdox_c
+#R_RNDR2,M_gdp_c,M_trdrd_c,-,M_dgdp_c,M_h2o_c,M_trdox_c
+#R_RNDR3,M_cdp_c,M_trdrd_c,-,M_dcdp_c,M_h2o_c,M_trdox_c
+#R_RNDR4,M_trdrd_c,M_udp_c,-,M_dudp_c,M_h2o_c,M_trdox_c
+#R_RNTR1,M_atp_c,M_trdrd_c,-,M_datp_c,M_h2o_c,M_trdox_c
+#R_RNTR2,M_gtp_c,M_trdrd_c,-,M_dgtp_c,M_h2o_c,M_trdox_c
+#R_XPPT,M_prpp_c,M_xan_c,-,M_ppi_c,M_xmp_c
+
