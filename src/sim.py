@@ -2,9 +2,9 @@ from rdkit import Chem,DataStructs
 from rdkit.Chem.Fingerprints import FingerprintMols
 from difflib import SequenceMatcher
 import re
-f1=open('allmetabolites.txt','r')
+f1=open('../data/node_list/allmetabolites.txt','r')
 set_metabolites=f1.read()
-f2=open('allreactions.txt','r')
+f2=open('../data/node_list/allreactions.txt','r')
 set_reactions=f2.read()
 
 threshold = 0.2
