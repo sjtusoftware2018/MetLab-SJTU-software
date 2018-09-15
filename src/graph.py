@@ -1,6 +1,9 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from enum import Enum, IntEnum, unique
 import re
+from os.path import dirname, abspath
 
 
 '''
@@ -102,6 +105,15 @@ class SubGraph(object):
         else:
             self.graph[node1] = [node2]
 
+    def isEdge(self, node1, node2):
+        if isinstance(node1, Node) and isinstance(node2, Node):
+            if node2 in self.graph[node1]:
+                return True
+            else:
+                return False
+        else:
+            raise TypeError()
+
 class Graph(object):
     """
     A class of graph, which was a list of subgraphs.
@@ -114,7 +126,8 @@ class Graph(object):
         num_of_subGraphs : Returns the number of subgraphs.
     """
     def __init__(self, filename):
-        self.subGraphs = self.__read(filename)
+        path = dirname(dirname(abspath(__file__))) + '/data/metabolic_network/' + filename
+        self.subGraphs = self.__read(path)
 
     def __read(self,filename):
         """

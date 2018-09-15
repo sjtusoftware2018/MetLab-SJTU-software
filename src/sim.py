@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 from rdkit import Chem,DataStructs
 from rdkit.Chem.Fingerprints import FingerprintMols
 from difflib import SequenceMatcher
