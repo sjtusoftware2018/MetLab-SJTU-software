@@ -3,6 +3,7 @@
 
 from enum import Enum, IntEnum, unique
 import re
+from os.path import dirname, abspath
 
 
 '''
@@ -40,7 +41,7 @@ class Node(object):
                 self.type = NodeType(1)
             else:
                 raise ValueError()
-        if isinstance(name, str) and isinstance(id, str) and isinstance(reverse, str):
+        if isinstance(name, str) and isinstance(id, str): # and isinstance(reverse, str):
             self.name = name
             self.id = id
             self.reverse = reverse
@@ -62,7 +63,7 @@ class SubGraph(object):
     Attributes:
         net_name :
         node_list: A list of valid nodes.
-                   If no list is given, the graph is initialized empty.
+                   If no list is given, the graph is instantiated empty.
         graph    : A dictionary with a name of the node as a key, and a list
                    of nodes which are connected to the key node as the value.
 
@@ -103,7 +104,7 @@ class SubGraph(object):
             self.graph[node1].append(node2)
         else:
             self.graph[node1] = [node2]
-            
+
     def isEdge(self, node1, node2):
         if isinstance(node1, Node) and isinstance(node2, Node):
             if node2 in self.graph[node1]:
@@ -125,15 +126,27 @@ class Graph(object):
         num_of_subGraphs : Returns the number of subgraphs.
     """
     def __init__(self, filename):
-        self.subGraphs = self.__read(filename)
+        path = dirname(dirname(abspath(__file__))) + '/data/ALLSPECIES_tsv/' + filename
+        self.subGraphs = self.__read(path)
 
-    def __read(self,filename):
+    def __read(self,filename,separator = '\t'):
         """
         Read a network file, and return a list of subgraphs
         """
         list_of_subgraph = []
         with open(filename, 'r') as file:
-            network_name = file.readline().strip()[2:]
+            """
+            Handling the first subgraph
+            """
+            while line = file.readline():
+                line = line.strip() 
+                """
+                Judge if the line is empty or annotation
+                """
+                if not len(line) or line.startswith('//'):
+                    network_name = line[2:].strip()
+                    break
+            # network_name = file.readline().strip()[2:]
             sub = SubGraph(network_name)
             for line in file:
                 if line.strip().startswith('##'):
@@ -146,13 +159,13 @@ class Graph(object):
                     """
                     Handling a reaction entry
                     """
-                    itemrlist = line.strip().split(',')
+                    itemrlist = line.strip().split(separator)
                     sub.addRxn(itemrlist)
                 else:
                     """
                     Handling a node entry
                     """
-                    itermlist = line.strip().split(',')
+                    itermlist = line.strip().split(separator)
                     name, node_id, node_type, reverse = itermlist
                     node = Node(name, node_id, node_type, reverse)
                     sub.addNode(node)

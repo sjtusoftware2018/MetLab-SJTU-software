@@ -41,7 +41,7 @@ class Node(object):
                 self.type = NodeType(1)
             else:
                 raise ValueError()
-        if isinstance(name, str) and isinstance(id, str) and isinstance(reverse, str):
+        if isinstance(name, str) and isinstance(id, str): # and isinstance(reverse, str):
             self.name = name
             self.id = id
             self.reverse = reverse
