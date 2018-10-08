@@ -154,6 +154,7 @@ class Graph(object):
                     """
                     Handling a node entry
                     """
+                    print 'node'
                     itermlist = line.strip().split(',')
                     name, node_id, node_type, reverse = itermlist
                     node = Node(name, node_id, node_type, reverse)

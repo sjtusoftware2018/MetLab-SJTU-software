@@ -132,21 +132,25 @@ class Graph(object):
     def __read(self,filename,separator = '\t'):
         """
         Read a network file, and return a list of subgraphs
-        """
+        
         list_of_subgraph = []
         with open(filename, 'r') as file:
-            """
-            Handling the first subgraph
-            """
+            
+            ### Handling the first subgraph
             while line = file.readline():
                 line = line.strip() 
-                """
-                Judge if the line is empty or annotation
-                """
+                
+                ###Judge if the line is empty or annotation
+                
                 if not len(line) or line.startswith('//'):
                     network_name = line[2:].strip()
                     break
             # network_name = file.readline().strip()[2:]
+            sub = SubGraph(network_name)
+        """
+        list_of_subgraph = []
+        with open(filename, 'r') as file:
+            network_name = file.readline().strip()[2:]
             sub = SubGraph(network_name)
             for line in file:
                 if line.strip().startswith('##'):
