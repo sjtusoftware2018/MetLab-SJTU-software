@@ -1,0 +1,29 @@
+##Inositol Metabolism
+M_2ins_c	2-Inosose
+M_accoa_c	Acetyl-CoA
+M_adp_c	ADP C10H12N5O10P2
+M_atp_c	ATP C10H12N5O13P3
+M_co2_c	CO2 CO2
+M_coa_c	Coenzyme A
+M_d5kg_c	2-Deoxy-5-keto-D-gluconic acid
+M_d5kgp_c	2-Deoxy-5-keto-D-gluconic acid 6-phosphate
+M_dhap_c	Dihydroxyacetone phosphate
+M_dkdi_c	D-2,3-Diketo 4-deoxy-epi-inositol
+M_h2o_c	H2O H2O
+M_h_c	H+
+M_inost_c	Myo-Inositol
+M_msa_c	Malonate semialdehyde
+M_nad_c	Nicotinamide adenine dinucleotide
+M_nadh_c	Nicotinamide adenine dinucleotide - reduced
+R_2INSD	2-Inosose dehydratase	0
+R_D5KGK	2-Deoxy-5-Keto-D-gluconate kinase	0
+R_D5KGPA	2-Deoxy-5-keto-D-gluconate 6-phosphate aldolase	0
+R_DKDID	D-2,3-Diketo 4-deoxy-epi-inositol dehydratase	0
+R_INS2D	Inositol 2-dehydrogenase	0
+R_MMSAD3	Methylmalonate-semialdehyde dehydrogenase (malonic semialdehyde)	0
+#R_2INSD	M_2ins_c	-	M_dkdi_c	M_h2o_c
+#R_D5KGK	M_atp_c	M_d5kg_c	-	M_adp_c	M_d5kgp_c	M_h_c
+#R_D5KGPA	M_d5kgp_c	-	M_dhap_c	M_msa_c
+#R_DKDID	M_dkdi_c	M_h2o_c	-	M_d5kg_c	M_h_c
+#R_INS2D	M_inost_c	M_nad_c	-	M_2ins_c	M_h_c	M_nadh_c
+#R_MMSAD3	M_coa_c	M_msa_c	M_nad_c	-	M_accoa_c	M_co2_c	M_nadh_c

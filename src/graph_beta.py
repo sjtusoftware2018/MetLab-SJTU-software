@@ -4,11 +4,10 @@
 from enum import Enum, IntEnum, unique
 import re
 from os.path import dirname, abspath
-from utils import *
+#from utils import *
 
 '''
 Define a enumous class node type
-'''
 try:
     @unique
     class NodeType(Enum):
@@ -16,6 +15,7 @@ try:
         reaction = 1
 except ValueError as e:
     print(e)
+'''
 
 class Node(object):
     """
@@ -32,15 +32,12 @@ class Node(object):
         """
         Initialize a single node.
         """
-        try:
-            self.type = NodeType(node_type)
-        except ValueError as e:
-            if node_type[0] in 'mM0':
-                self.type = NodeType(0)
-            elif node_type[0] in 'rR1':
-                self.type = NodeType(1)
-            else:
-                raise ValueError()
+        if str(id)[0] in 'mM0':
+            self.type = '0'
+        elif str(id)[0] in 'rR1':
+            self.type = '1'
+        else:
+            raise ValueError()
         if isinstance(name, str) and isinstance(id, str): # and isinstance(reverse, str):
             self.name = name
             self.id = id
@@ -113,6 +110,8 @@ class SubGraph(object):
                 return False
         else:
             raise TypeError()
+    def length(self):
+        return len(self.node_list)
 
 class Graph(object):
     """
@@ -127,6 +126,7 @@ class Graph(object):
     """
     def __init__(self, filename):
         path = dirname(dirname(abspath(__file__))) + '/data/ALLSPECIES_tsv/' + filename
+        self.filename = filename
         self.subGraphs = self.__read(path)
 
     def __read(self,filename,separator = '\t'):
@@ -163,7 +163,7 @@ class Graph(object):
                     """
                     Handling a reaction entry
                     """
-                    itemrlist = line.strip().split(separator)
+                    itemrlist = line[1:].strip().split(separator)
                     sub.addRxn(itemrlist)
                 else:
                     """
@@ -171,10 +171,10 @@ class Graph(object):
                     """
                     itermlist = line.strip().split(separator)
                     if len(itermlist) is 3:
-                        name, node_id, reverse = itermlist
+                        node_id,name, reverse = itermlist
                         node_type = 1
                     elif len(itermlist) is 2:
-                        name, node_id, = itermlist
+                        node_id, name = itermlist
                         node_type,reverse = 1,0
                     node = Node(name, node_id, node_type, reverse)
                     sub.addNode(node)
@@ -248,6 +248,9 @@ class Align_sub_graph(object):
         self.align_graph = {}
         self.sub_graph1 = sub_graph1
         self.sub_graph2 = sub_graph2
+        self.align_sub_graph1 = sub_graph1
+        self.align_sub_graph1.node_list = []
+        self.align_sub_graph1.graph = {}
         for node1 in sub_graph1.node_list:
             for node2 in sub_graph2.node_list:
                 self.__add_node(node1, node2, sim)
@@ -258,6 +261,7 @@ class Align_sub_graph(object):
             node = Align_node(node1, node2, sim(node1, node2))
             if node not in self.node_list:
                 self.node_list.append(node)
+                self.align_sub_graph1.node_list.append(node1)
             else:
                 pass
         else:
@@ -269,8 +273,8 @@ class Align_sub_graph(object):
         else:
             for i in xrange(len(self.node_list)-1):
                 for j in xrange(i+1,len(self.node_list)):
-                    if self.sub_graph1.isEdge(self.node_list[i].node1,self.node_list[j].node1)\
-                    and self.sub_graph2.isEdge(self.node_list[i].node2,self.node_list[j].node2):
+                    if self.sub_graph1.isEdge(self.node_list[i].node1,self.node_list[j].node1) and self.sub_graph2.isEdge(self.node_list[i].node2,self.node_list[j].node2):
+                        self.align_sub_graph1.addEdge(self.node_list[i].node1,self.node_list[j].node1)
                         if self.node_list[i] in self.align_graph.keys():
                             self.align_graph[self.node_list[i]].append(self.node_list[j])
                             self.align_graph[self.node_list[j]].append(self.node_list[i])
@@ -302,28 +306,30 @@ class Align_sub_graph(object):
         pass
         
 
-
 class AlignmentGraph(object):
     
     ### A class for alignment graph
     
     def __init__(self, graph1, graph2, sim):
         self.align_node_list = []
-        self.sub_graph = []
+        self.align_sub_graph = []
+        self.graph1 = graph1
+        self.graph2 = graph2
 
         for sub in graph1:
-            Align_sub_graph(sub, graph2[0], sim)
-        for 
+            self.align_sub_graph.append(Align_sub_graph(sub, graph2[0],sim).align_sub_graph1)        
+        l = 0
+        m = None
+        for sub in align_sub_graph:
+            if sub.length() > l:
+                m = sub
+                l = m.length()
+        if m.length() > sqrt(graph2.length()):
+            b = List2dot()
+            b.list2dot([a.subGraphs[0]], a.filename)
 
-    def __sim():
 
-    def __construct_align_graph():
 
-    def __optimize():
 
-    def get_alignment_result():
 
-    def _show_graph():
 
-    def _present_graph():
-'''
